@@ -69,10 +69,23 @@
 				<bordersize>8</bordersize>
 			</control>
 			<control type="label">
+				<description>Addon Path value</description>
+				<left>260</left>
+				<top>55</top>
+				<width>645</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font10</font>
+				<label>$INFO[ListItem.Property(Addon.Path)]</label>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+			</control>
+			<control type="label">
 				<description>Addon Title value</description>
-				<left>280</left>
+				<left>260</left>
 				<top>80</top>
-				<width>580</width>
+				<width>645</width>
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -85,11 +98,35 @@
 				<left>270</left>
 				<top>130</top>
 				<control type="label">
-					<description>Type txt</description>
+					<description>AddonID txt</description>
 					<left>10</left>
 					<top>0</top>
 					<width>140</width>
 					<height>25</height>
+					<label>Add-on ID:</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="label">
+					<description>AddonID Value</description>
+					<left>160</left>
+					<top>0</top>
+					<width>440</width>
+					<height>25</height>
+					<label fallback="416">$INFO[ListItem.Property(Addon.ID)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<description>Type txt</description>
+					<left>10</left>
+					<top>25</top>
+					<width>140</width>
+					<height>23</height>
 					<label>$LOCALIZE[146]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -99,9 +136,9 @@
 				<control type="label">
 					<description>Type Value</description>
 					<left>160</left>
-					<top>0</top>
+					<top>25</top>
 					<width>440</width>
-					<height>25</height>
+					<height>23</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -111,7 +148,7 @@
 				<control type="label">
 					<description>Author txt</description>
 					<left>10</left>
-					<top>30</top>
+					<top>46</top>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[21863]:</label>
@@ -123,7 +160,7 @@
 				<control type="label">
 					<description>Author Value</description>
 					<left>160</left>
-					<top>30</top>
+					<top>46</top>
 					<width>440</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
@@ -135,7 +172,7 @@
 				<control type="label">
 					<description>Version txt</description>
 					<left>10</left>
-					<top>60</top>
+					<top>69</top>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[24051]</label>
@@ -147,7 +184,7 @@
 				<control type="label">
 					<description>Version Value</description>
 					<left>160</left>
-					<top>60</top>
+					<top>69</top>
 					<width>440</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
@@ -159,7 +196,7 @@
 				<control type="label">
 					<description>Rating txt</description>
 					<left>10</left>
-					<top>90</top>
+					<top>92</top>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[563]:</label>
@@ -171,16 +208,16 @@
 				<control type="image">
 					<description>Rating value</description>
 					<left>155</left>
-					<top>90</top>
+					<top>92</top>
 					<width>160</width>
-					<height>32</height>
+					<height>27</height>
 					<aspectratio align="left">keep</aspectratio>
 					<texture fallback="LeftRating/rating0.png">$INFO[ListItem.Property(Addon.StarRating),LeftRating/]</texture>
 				</control>
 				<control type="label">
 					<description>Summary txt</description>
 					<left>10</left>
-					<top>120</top>
+					<top>115</top>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[20037]:</label>
@@ -192,7 +229,7 @@
 				<control type="fadelabel">
 					<description>Summary Value</description>
 					<left>160</left>
-					<top>120</top>
+					<top>115</top>
 					<width>440</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>

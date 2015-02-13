@@ -169,10 +169,25 @@
 				<texturefocus>OSDPlayFO.png</texturefocus>
 				<texturenofocus>OSDPlayNF.png</texturenofocus>
 				<onleft>206</onleft>
-				<onright>250</onright>
+				<onright>208</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onclick>XBMC.RunPlugin(plugin://plugin.program.sendtoaxel/?mode=AxelPlay)</onclick>
+			</control>
+			<control type="button" id="208">
+				<posx>440</posx>
+				<posy>0</posy>
+				<width>55</width>
+				<height>55</height>
+				<label>Download with Axel</label>
+				<font>-</font>
+				<texturefocus>OSDRecordOffFO.png</texturefocus>
+				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<onleft>207</onleft>
+				<onright>250</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>XBMC.RunPlugin(plugin://plugin.program.sendtoaxel/?mode=AxelDownload)</onclick>
 			</control>
 		</control>
 
@@ -335,7 +350,7 @@
 				<font>-</font>
 				<texturefocus>OSDStereoscopicFO.png</texturefocus>
 				<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
-				<onleft>207</onleft>
+				<onleft>208</onleft>
 				<onright>250</onright>
 				<onup>501</onup>
 				<ondown>1000</ondown>
