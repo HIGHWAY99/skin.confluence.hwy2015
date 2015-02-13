@@ -31,7 +31,7 @@
 				<top>-150</top>
 				<width>1280</width>
 				<height>256</height>
-				<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
+				<texture colordiffuse="blue" flipy="true" border="1">HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="label">
 				<description>Partymode Header label</description>
@@ -80,7 +80,7 @@
 				<top>230r</top>
 				<width>1280</width>
 				<height>230</height>
-				<texture border="1">HomeNowPlayingBack.png</texture>
+				<texture colordiffuse="blue" border="1">HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -143,7 +143,7 @@
 						<width>80</width>
 						<height>35</height>
 						<aspectratio align="right">keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+						<texture colordiffuse="blue">$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
 					</control>
 					<control type="group">
 						<description>Rating</description>
@@ -165,7 +165,7 @@
 							<width>100</width>
 							<height>35</height>
 							<aspectratio align="center">keep</aspectratio>
-							<texture fallback="LeftRating/rating0.png">$INFO[Player.StarRating,LeftRating/]</texture>
+							<texture colordiffuse="blue" fallback="LeftRating/rating0.png">$INFO[Player.StarRating,LeftRating/]</texture>
 						</control>
 					</control>
 				</control>
@@ -230,7 +230,7 @@
 				<width>1280</width>
 				<height>105</height>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<texture>black-back.png</texture>
+				<texture colordiffuse="blue">black-back.png</texture>
 			</control>
 			<control type="label">
 				<description>row 1 label</description>

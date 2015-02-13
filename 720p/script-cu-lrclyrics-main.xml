@@ -18,7 +18,7 @@
 				<width>600</width>
 				<height>720</height>
 				<colordiffuse>BBFFFFFF</colordiffuse>
-				<texture border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
+				<texture colordiffuse="blue" border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -29,7 +29,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<visible>system.getbool(input.enablemouse)</visible>
 			</control>
@@ -77,7 +77,7 @@
 				<top>120</top>
 				<width>550</width>
 				<height>4</height>
-				<texture>separator.png</texture>
+				<texture colordiffuse="blue">separator.png</texture>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
@@ -209,7 +209,7 @@
 						<width>550</width>
 						<height>41</height>
 						<visible>Control.HasFocus(120)</visible>
-						<texture border="5">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="5">MenuItemFO.png</texture>
 					</control>
 					<control type="label">
 						<left>10</left>
@@ -243,7 +243,7 @@
 				<top>640</top>
 				<width>550</width>
 				<height>4</height>
-				<texture>separator.png</texture>
+				<texture colordiffuse="blue">separator.png</texture>
 			</control>
 			<control type="label">
 				<description>Scraper label</description>

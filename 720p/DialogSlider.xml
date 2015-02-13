@@ -14,7 +14,7 @@
 			<top>-10</top>
 			<width>460</width>
 			<height>80</height>
-			<texture flipy="true" border="20,2,20,20">InfoMessagePanel.png</texture>
+			<texture colordiffuse="customcolor6" flipy="true" border="20,2,20,20">InfoMessagePanel.png</texture>
 		</control>
 		<control type="label" id="10">
 			<description>Dialog header</description>
@@ -25,7 +25,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12_title</font>
-			<textcolor>blue</textcolor>
+			<textcolor>customcolor6</textcolor>
 		</control>
 		<control type="label" id="12">
 			<description>Slider Value</description>
@@ -48,8 +48,8 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<texturesliderbar>osd_slider_bg_2.png</texturesliderbar>
-			<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-			<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+			<textureslidernib colordiffuse="customcolor6">osd_slider_nibNF.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="customcolor6">osd_slider_nib.png</textureslidernibfocus>
 			<onup>11</onup>
 			<ondown>11</ondown>
 			<onleft>11</onleft>

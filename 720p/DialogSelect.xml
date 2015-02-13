@@ -11,7 +11,7 @@
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="0,60" time="0" condition="Control.IsVisible(3) + !Control.IsVisible(5) + !IntegerGreaterThan(Container(3).NumItems,4)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,60" time="0" condition="Control.IsVisible(3) + !Control.IsVisible(5) + !IntegerGreaterThan(Container(3).NumItems,6)">Conditional</animation>
+ 			<animation effect="slide" start="0,0" end="0,60" time="0" condition="Control.IsVisible(3) + !Control.IsVisible(5) + !IntegerGreaterThan(Container(3).NumItems,6)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,60" time="0" condition="Control.IsVisible(3) + !Control.IsVisible(5) + !IntegerGreaterThan(Container(3).NumItems,8)">Conditional</animation>
 			<control type="group">
 				<visible>Control.IsVisible(5)</visible>
@@ -21,7 +21,7 @@
 					<top>0</top>
 					<width>850</width>
 					<height>630</height>
-					<texture border="40">$VAR[SelectBack]</texture>
+					<texture colordiffuse="blue" border="40">$VAR[SelectBack]</texture>
 				</control>
 				<control type="image">
 					<description>Dialog Header image</description>
@@ -54,7 +54,7 @@
 					<top>0</top>
 					<width>610</width>
 					<height>630</height>
-					<texture border="40">$VAR[SelectBack]</texture>
+					<texture colordiffuse="blue" border="40">$VAR[SelectBack]</texture>
 					<visible>[Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,8)] | Control.IsVisible(6)</visible>
 				</control>
 				<control type="image">
@@ -63,7 +63,7 @@
 					<top>0</top>
 					<width>610</width>
 					<height>550</height>
-					<texture border="40">$VAR[SelectBack]</texture>
+					<texture colordiffuse="blue" border="40">$VAR[SelectBack]</texture>
 					<visible>Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,6) + !IntegerGreaterThan(Container(3).NumItems,8)</visible>
 				</control>
 				<control type="image">
@@ -72,7 +72,7 @@
 					<top>0</top>
 					<width>610</width>
 					<height>370</height>
-					<texture border="40">$VAR[SelectBack]</texture>
+					<texture colordiffuse="blue" border="40">$VAR[SelectBack]</texture>
 					<visible>Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,4) + !IntegerGreaterThan(Container(3).NumItems,6)</visible>
 				</control>
 				<control type="image">
@@ -81,7 +81,7 @@
 					<top>0</top>
 					<width>610</width>
 					<height>280</height>
-					<texture border="40">$VAR[SelectBack]</texture>
+					<texture colordiffuse="blue" border="40">$VAR[SelectBack]</texture>
 					<visible>Control.IsVisible(3) + !IntegerGreaterThan(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
@@ -115,7 +115,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>10</onleft>
 				<onright>10</onright>
@@ -173,7 +173,7 @@
 						<top>0</top>
 						<width>550</width>
 						<height>40</height>
-						<texture border="5">button-focus2.png</texture>
+						<texture colordiffuse="blue" border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(3)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -219,7 +219,7 @@
 						<height>76</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<bordertexture border="3">black-back2.png</bordertexture>
+						<bordertexture colordiffuse="blue" border="3">black-back2.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
 					<control type="label">
@@ -261,7 +261,7 @@
 						<top>0</top>
 						<width>550</width>
 						<height>80</height>
-						<texture border="5">button-focus2.png</texture>
+						<texture colordiffuse="blue" border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(6)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -272,7 +272,7 @@
 						<height>76</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<bordertexture border="3">black-back2.png</bordertexture>
+						<bordertexture colordiffuse="blue" border="3">black-back2.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
 					<control type="label">
@@ -307,7 +307,7 @@
 				<height>510</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>3</onleft>

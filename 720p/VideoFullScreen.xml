@@ -11,7 +11,7 @@
 				<top>-150</top>
 				<width>1280</width>
 				<height>256</height>
-				<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
+				<texture colordiffuse="customcolor6" flipy="true" border="1">HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="label" id="1">
 				<description>Chapter Count Header label</description>
@@ -22,9 +22,9 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=grey] - (,)[/COLOR]]</label>
+				<textcolor>customcolor1</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
+				<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=customcolor2] - (,)[/COLOR]]</label>
 				<visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label" id="1">
@@ -36,8 +36,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor1</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
@@ -50,8 +50,8 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor1</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<label>$INFO[System.Time]</label>
 				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
 			</control>
@@ -60,7 +60,7 @@
 				<top>230r</top>
 				<width>1280</width>
 				<height>230</height>
-				<texture border="1">HomeNowPlayingBack.png</texture>
+				<texture colordiffuse="customcolor6" border="1">HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="image" id="1">
 				<description>cover image</description>
@@ -70,7 +70,7 @@
 				<height>230</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordertexture colordiffuse="customcolor6" border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>!VideoPlayer.Content(Movies)</visible>
 			</control>
@@ -82,7 +82,7 @@
 				<height>330</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordertexture colordiffuse="customcolor6" border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
@@ -99,8 +99,8 @@
 					<aligny>center</aligny>
 					<font>font13</font>
 					<label>$LOCALIZE[31040]</label>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>customcolor1</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 					<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
 				</control>
@@ -122,8 +122,8 @@
 					<aligny>center</aligny>
 					<font>font13</font>
 					<label>$LOCALIZE[19158]</label>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>customcolor1</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>VideoPlayer.Content(LiveTV) + Player.Recording</visible>
 				</control>
 				<control type="label" id="1">
@@ -135,8 +135,8 @@
 					<align>left</align>
 					<font>font12</font>
 					<label>$INFO[VideoPlayer.Studio]</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>customcolor3</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="label" id="1">
@@ -148,8 +148,8 @@
 					<align>left</align>
 					<font>font12</font>
 					<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode])</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>customcolor3</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label" id="1">
@@ -161,8 +161,8 @@
 					<align>left</align>
 					<font>font12</font>
 					<label>$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>customcolor3</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
 				<control type="label" id="1">
@@ -173,9 +173,9 @@
 					<height>25</height>
 					<align>left</align>
 					<font>font12</font>
-					<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=blue],[/COLOR])]</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=customcolor6],[/COLOR])]</label>
+					<textcolor>customcolor3</textcolor>
+					<shadowcolor>customcolor5</shadowcolor>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="grouplist" id="1">
@@ -200,21 +200,21 @@
 						<width>50</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+						<texture colordiffuse="codec1">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 					</control>
 					<control type="image" id="1">
 						<description>Audio Codec Image</description>
 						<width>85</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+						<texture colordiffuse="codec1">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 					</control>
 					<control type="image" id="1">
 						<description>Audio Channels Image</description>
 						<width>50</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+						<texture colordiffuse="codec1">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 					</control>
 					<control type="group" id="1">
 						<width>85</width>
@@ -226,7 +226,7 @@
 							<description>Audio Language Image</description>
 							<width>80</width>
 							<height>35</height>
-							<texture>flagging/AudioLang.png</texture>
+							<texture colordiffuse="codec1">flagging/AudioLang.png</texture>
 						</control>
 						<control type="label" id="1">
 							<left>38</left>
@@ -236,7 +236,7 @@
 							<font>font13</font>
 							<align>left</align>
 							<label>$INFO[VideoPlayer.AudioLanguage]</label>
-							<textcolor>grey</textcolor>
+							<textcolor>customcolor2</textcolor>
 						</control>
 					</control>
 					<control type="group" id="1">
@@ -248,7 +248,7 @@
 							<top>0</top>
 							<width>80</width>
 							<height>35</height>
-							<texture>flagging/SubLang.png</texture>
+							<texture colordiffuse="codec1">flagging/SubLang.png</texture>
 						</control>
 						<control type="label" id="1">
 							<left>38</left>
@@ -258,7 +258,7 @@
 							<font>font13</font>
 							<align>left</align>
 							<label>$INFO[VideoPlayer.SubtitlesLanguage]</label>
-							<textcolor>grey</textcolor>
+							<textcolor>customcolor2</textcolor>
 						</control>
 					</control>
 				</control>
@@ -271,7 +271,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>grey</textcolor>
+					<textcolor>customcolor2</textcolor>
 					<scroll>true</scroll>
 					<visible>!Window.IsVisible(VideoOSD) + !VideoPlayer.Content(LiveTV)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
@@ -285,7 +285,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>grey</textcolor>
+					<textcolor>customcolor2</textcolor>
 					<scroll>true</scroll>
 					<visible>!Window.IsVisible(VideoOSD) + VideoPlayer.Content(LiveTV)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
@@ -324,7 +324,7 @@
 					<width>720</width>
 					<height>16</height>
 					<info>Player.ProgressCache</info>
-					<midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
+					<midtexture colordiffuse="vidbarcache" border="6,0,6,0">OSDProgressMidLight.png</midtexture>
 				</control>
 				<control type="progress" id="1">
 					<description>Progressbar</description>
@@ -369,7 +369,7 @@
 				<top>0</top>
 				<width>1280</width>
 				<height>160</height>
-				<texture>black-back.png</texture>
+				<texture colordiffuse="customcolor6">black-back.png</texture>
 			</control>
 			<control type="label" id="10">
 				<description>row 1 label</description>
@@ -412,7 +412,7 @@
 			<height>100</height>
 			<font>font13caps</font>
 			<description>TV Channel Group Select Button</description>
-			<texturebg border="20">OverlayDialogBackground.png</texturebg>
+			<texturebg colordiffuse="customcolor6" border="20">OverlayDialogBackground.png</texturebg>
 			<onleft>503</onleft>
 			<onright>503</onright>
 			<onup>500</onup>
@@ -428,7 +428,7 @@
 				<top>0</top>
 				<width>1280</width>
 				<height>220</height>
-				<texture>black-back.png</texture>
+				<texture colordiffuse="customcolor6">black-back.png</texture>
 			</control>
 			<control type="label">
 				<description>Header</description>
@@ -440,7 +440,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 			</control>
 			<control type="label">
 				<description>Backend</description>
@@ -452,7 +452,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Backend value</description>
@@ -464,7 +464,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Device</description>
@@ -476,7 +476,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Device value</description>
@@ -488,7 +488,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Status</description>
@@ -500,7 +500,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Status value</description>
@@ -512,7 +512,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Signal</description>
@@ -524,7 +524,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
@@ -544,7 +544,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>SNR</description>
@@ -556,7 +556,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
@@ -577,7 +577,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>BER</description>
@@ -589,7 +589,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>BER value</description>
@@ -601,7 +601,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>UNC</description>
@@ -613,7 +613,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>UNC value</description>
@@ -625,7 +625,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Service</description>
@@ -637,7 +637,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Service value</description>
@@ -649,7 +649,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Encryption</description>
@@ -661,7 +661,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Encryption value</description>
@@ -673,7 +673,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Provider</description>
@@ -685,7 +685,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Provider value</description>
@@ -697,7 +697,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 			<control type="label">
 				<description>Mux</description>
@@ -709,7 +709,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 			</control>
 			<control type="label">
 				<description>Mux value</description>
@@ -721,7 +721,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 			</control>
 		</control>
 	</controls>

@@ -25,7 +25,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_music.png</texture>
+			<texture colordiffuse="blue">icon_music.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>

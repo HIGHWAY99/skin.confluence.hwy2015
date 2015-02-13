@@ -57,7 +57,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>2</onleft>
 				<onright>2</onright>
@@ -72,7 +72,7 @@
 				<height>495</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>5</onleft>
@@ -141,7 +141,7 @@
 						<top>0</top>
 						<width>720</width>
 						<height>40</height>
-						<texture border="5">button-focus2.png</texture>
+						<texture colordiffuse="blue" border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(5)</visible>
 					</control>
 					<control type="label">

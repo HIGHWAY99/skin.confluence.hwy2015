@@ -28,14 +28,14 @@
 				<top>5</top>
 				<width>1090</width>
 				<height>630</height>
-				<texture border="15">ContentPanel.png</texture>
+				<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 			</control>
 			<control type="image">
 				<left>5</left>
 				<top>625</top>
 				<width>1090</width>
 				<height>64</height>
-				<texture border="15">ContentPanelMirror.png</texture>
+				<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -46,7 +46,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>1</onleft>
 				<onright>1</onright>
@@ -62,7 +62,7 @@
 				<width>220</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
-				<texture>Confluence_Logo.png</texture>
+				<texture colordiffuse="blue">Confluence_Logo.png</texture>
 			</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
@@ -90,7 +90,7 @@
 				<font>font13caps</font>
 				<textcolor>selected</textcolor>
 				<focusedcolor>selected</focusedcolor>
-				<texturefocus border="5">MenuItemFO.png</texturefocus>
+				<texturefocus colordiffuse="blue" border="5">buttonfocus2.png</texturefocus>
 				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 				<onleft>5</onleft>
@@ -115,7 +115,7 @@
 				<top>10</top>
 				<width>790</width>
 				<height>618</height>
-				<texture border="5">black-back2.png</texture>
+				<texture colordiffuse="blue" border="5">black-back2.png</texture>
 			</control>
 			<control type="image">
 				<left>268</left>
@@ -157,7 +157,7 @@
 				<height>435</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>5</onleft>
@@ -171,7 +171,7 @@
 				<top>525</top>
 				<width>750</width>
 				<height>2</height>
-				<texture>separator2.png</texture>
+				<texture colordiffuse="blue">separator2.png</texture>
 				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="textbox" id="6">
@@ -198,7 +198,7 @@
 			<font>font13_title</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">MenuItemFO.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">buttonfocus2.png</texturefocus>
 			<texturenofocus border="5">MenuItemNF.png</texturenofocus>
 			<pulseonselect>false</pulseonselect>
 		</control>
@@ -211,7 +211,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<invalidcolor>invalid</invalidcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 		</control>
 		<control type="radiobutton" id="8">
@@ -222,7 +222,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 		</control>
 		<control type="spincontrolex" id="9">
@@ -233,7 +233,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -246,14 +246,14 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 			<aligny>center</aligny>
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>
 			<height>2</height>
-			<texture>separator2.png</texture>
+			<texture colordiffuse="blue">separator2.png</texture>
 		</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one below</description>
@@ -273,7 +273,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_system.png</texture>
+			<texture colordiffuse="blue">icon_system.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>

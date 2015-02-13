@@ -13,7 +13,7 @@
 			<top>0</top>
 			<width>610</width>
 			<height>240</height>
-			<texture border="40">DialogBack.png</texture>
+			<texture colordiffuse="customcolor6" border="40">DialogBack.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
@@ -34,7 +34,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>selected</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
@@ -45,7 +45,7 @@
 			<label>-</label>
 			<font>-</font>
 			<onclick>PreviousMenu</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
+			<texturefocus colordiffuse="customcolor6">DialogCloseButton.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<onleft>10</onleft>
 			<onright>10</onright>
@@ -72,8 +72,8 @@
 			<height>40</height>
 			<label>186</label>
 			<font>font12_title</font>
-			<textcolor>white</textcolor>
-			<focusedcolor>white</focusedcolor>
+			<textcolor>customcolor1</textcolor>
+			<focusedcolor>customcolor1</focusedcolor>
 			<align>center</align>
 			<onleft>10</onleft>
 			<onright>10</onright>

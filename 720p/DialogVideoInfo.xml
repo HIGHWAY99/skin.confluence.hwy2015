@@ -13,7 +13,7 @@
 				<top>0</top>
 				<width>1100</width>
 				<height>720</height>
-				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
+				<texture colordiffuse="customcolor6" border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -24,7 +24,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="customcolor6">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -129,7 +129,7 @@
 						<top>5</top>
 						<width>665</width>
 						<height>370</height>
-						<texture>black-back.png</texture>
+						<texture colordiffuse="customcolor6">black-back.png</texture>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -174,7 +174,7 @@
 						<width>200</width>
 						<height>230</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>GlassOverlay.png</texture>
+						<texture colordiffuse="customcolor6">GlassOverlay.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
 					</control>
 					<control type="list" id="49">
@@ -197,7 +197,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -232,7 +232,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -330,7 +330,7 @@
 						<width>740</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="customcolor6">separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -354,7 +354,7 @@
 						<width>200</width>
 						<height>230</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>GlassOverlay.png</texture>
+						<texture colordiffuse="customcolor6">GlassOverlay.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
 					</control>
 					<control type="list" id="49">
@@ -377,7 +377,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -401,7 +401,7 @@
 								<width>740</width>
 								<height>30</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture>MenuItemFO.png</texture>
+								<texture colordiffuse="customcolor6">MenuItemFO.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
@@ -412,7 +412,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -474,7 +474,7 @@
 						<width>740</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="customcolor6">separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -522,7 +522,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -557,7 +557,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -649,7 +649,7 @@
 						<width>740</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="customcolor6">separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -687,7 +687,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -711,7 +711,7 @@
 								<width>640</width>
 								<height>30</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture>MenuItemFO.png</texture>
+								<texture colordiffuse="customcolor6">buttonfocus2.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
@@ -722,7 +722,7 @@
 								<font>font13</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
+								<textcolor>customcolor6</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
@@ -802,7 +802,7 @@
 						<width>640</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="customcolor6">separator.png</texture>
 					</control>
 				</control>
 				<control type="label">
@@ -816,7 +816,7 @@
 					<scroll>true</scroll>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>[COLOR=blue]$LOCALIZE[207][/COLOR]$INFO[Container(400).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(400).NumPages,/, )]</label>
+					<label>[COLOR=customcolor6]$LOCALIZE[207][/COLOR]$INFO[Container(400).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(400).NumPages,/, )]</label>
 					<visible>Control.IsVisible(400)</visible>
 				</control>
 				<control type="label">
@@ -830,7 +830,7 @@
 					<scroll>true</scroll>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>[COLOR=blue]$LOCALIZE[206][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</label>
+					<label>[COLOR=customcolor6]$LOCALIZE[206][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</label>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 				<control type="spincontrol" id="61">
@@ -918,7 +918,7 @@
 							<width>430</width>
 							<height>40</height>
 							<visible>Control.HasFocus(50)</visible>
-							<texture border="5">button-focus2.png</texture>
+							<texture colordiffuse="customcolor6" border="5">buttonfocus2.png</texture>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -949,7 +949,7 @@
 						<description>Play/browse to Show</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>208</label>
-						<alttexturefocus border="2">button-focus.png</alttexturefocus>
+						<alttexturefocus colordiffuse="customcolor6" border="2">buttonfocus1.png</alttexturefocus>
 						<alttexturenofocus border="2">button-nofocus.png</alttexturenofocus>
 						<altlabel>1024</altlabel>
 						<usealttexture>Container.Content(TVShows)</usealttexture>

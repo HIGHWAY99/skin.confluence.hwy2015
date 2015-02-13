@@ -46,7 +46,7 @@
 			<label>-</label>
 			<font>-</font>
 			<onclick>PreviousMenu</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
+			<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<onleft>10</onleft>
 			<onright>10</onright>
@@ -75,7 +75,7 @@
 			<height>350</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>ScrollBarNib.png</textureslidernib>
 			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 			<onleft>5</onleft>
@@ -94,7 +94,7 @@
 			<focusedcolor>white</focusedcolor>
 			<invalidcolor>invalid</invalidcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">button-focus2.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -105,7 +105,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">button-focus2.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -116,7 +116,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">button-focus2.png</texturefocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
@@ -129,7 +129,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">button-focus2.png</texturefocus>
 			<aligny>center</aligny>
 		</control>
 		<control type="edit" id="12">
@@ -141,7 +141,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">button-focus2.png</texturefocus>
 		</control>
 
 		<control type="group" id="9001">
@@ -156,7 +156,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue" border="5">button-focus.png</texturefocus>
 				<label>186</label>
 				<font>font12_title</font>
 				<onup>5</onup>
@@ -173,7 +173,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue" border="5">button-focus.png</texturefocus>
 				<label>192</label>
 				<font>font12_title</font>
 				<onup>5</onup>

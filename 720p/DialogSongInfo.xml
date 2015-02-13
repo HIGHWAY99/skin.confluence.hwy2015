@@ -17,7 +17,7 @@
 				<top>0</top>
 				<width>910</width>
 				<height>510</height>
-				<texture border="40">DialogBack.png</texture>
+				<texture colordiffuse="blue" border="40">DialogBack.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
@@ -49,7 +49,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>3</onleft>
 				<onright>3</onright>

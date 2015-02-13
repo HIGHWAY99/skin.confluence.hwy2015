@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<keymap>
+	<global>
+		<keyboard>
+			<F6>Skin.ToggleSetting(DebugGrid)</F6>
+			<F7>Skin.ToggleSetting(HideDebugInfo)</F7>
+		</keyboard>
+	</global>
+</keymap>

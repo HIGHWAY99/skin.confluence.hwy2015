@@ -36,7 +36,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_video.png</texture>
+			<texture colordiffuse="customcolor6">icon_video.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -52,7 +52,7 @@
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$INFO[Container.FolderName]</label>
+				<label>[COLOR=customcolor6] - [/COLOR]$INFO[Container.FolderName]</label>
 				<visible>!IsEmpty(Container.FolderName)</visible>
 			</control>
 		</control>
@@ -75,7 +75,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31006</label>
-					<textcolor>blue</textcolor>
+					<textcolor>customcolor6</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -93,7 +93,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>ButtonCommonValues</include>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturefocus colordiffuse="customcolor6" border="5">buttonfocus1.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<label>31051</label>
 					<altlabel>31050</altlabel>
@@ -129,7 +129,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31026</label>
-					<textcolor>blue</textcolor>
+					<textcolor>customcolor6</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -164,7 +164,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31039</label>
-					<textcolor>blue</textcolor>
+					<textcolor>customcolor6</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -174,7 +174,7 @@
 					<include>ButtonCommonValues</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturefocus colordiffuse="customcolor6" border="5">buttonfocus1.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>

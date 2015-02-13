@@ -65,7 +65,7 @@
 			<top>-40</top>
 			<width>1280</width>
 			<height>120</height>
-			<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
+			<texture colordiffuse="customcolor6" flipy="true" border="1">HomeNowPlayingBack.png</texture>
 			<visible>[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Player.HasAudio + ![Skin.HasSetting(ShowBackgroundVis) | SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]] | [!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -90,14 +90,14 @@
 					<top>60</top>
 					<width>750</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>750</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -108,28 +108,28 @@
 					<top>60</top>
 					<width>640</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>640</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>700</left>
 					<top>60</top>
 					<width>530</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>700</left>
 					<top>652</top>
 					<width>530</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -140,28 +140,28 @@
 					<top>60</top>
 					<width>840</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>840</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>900</left>
 					<top>60</top>
 					<width>330</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>900</left>
 					<top>652</top>
 					<width>330</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -172,14 +172,14 @@
 					<top>50</top>
 					<width>1180</width>
 					<height>610</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>1180</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -190,28 +190,28 @@
 					<top>230</top>
 					<width>640</width>
 					<height>430</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>640</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>700</left>
 					<top>230</top>
 					<width>550</width>
 					<height>430</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>700</left>
 					<top>652</top>
 					<width>550</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -222,14 +222,14 @@
 					<top>60</top>
 					<width>1130</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>75</left>
 					<top>652</top>
 					<width>1130</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -240,28 +240,28 @@
 					<top>60</top>
 					<width>490</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>490</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>550</left>
 					<top>60</top>
 					<width>680</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>550</left>
 					<top>652</top>
 					<width>680</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -272,28 +272,28 @@
 					<top>60</top>
 					<width>400</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>400</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>460</left>
 					<top>60</top>
 					<width>770</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>460</left>
 					<top>652</top>
 					<width>770</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="customcolor6" border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
 		</control>

@@ -12,7 +12,7 @@
 				<top>0</top>
 				<width>1100</width>
 				<height>720</height>
-				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
+				<texture colordiffuse="blue" border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -23,7 +23,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -257,7 +257,7 @@
 						<width>640</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="blue">separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -319,7 +319,7 @@
 								<width>640</width>
 								<height>30</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture>MenuItemFO.png</texture>
+								<texture colordiffuse="blue">MenuItemFO.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
@@ -410,7 +410,7 @@
 						<width>640</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="blue">separator.png</texture>
 					</control>
 				</control>
 				<control type="label">
@@ -550,7 +550,7 @@
 							<width>430</width>
 							<height>40</height>
 							<visible>Control.HasFocus(50)</visible>
-							<texture border="5">button-focus2.png</texture>
+							<texture colordiffuse="blue" border="5">button-focus2.png</texture>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -610,7 +610,7 @@
 							<width>430</width>
 							<height>40</height>
 							<visible>Control.HasFocus(50)</visible>
-							<texture border="5">button-focus2.png</texture>
+							<texture colordiffuse="blue" border="5">button-focus2.png</texture>
 						</control>
 						<control type="label">
 							<left>10</left>

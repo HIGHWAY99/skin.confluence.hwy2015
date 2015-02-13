@@ -18,7 +18,7 @@
 			<font>-</font>
 			<onclick>Dialog.Close(MusicOSD,true)</onclick>
 			<onclick>FullScreen</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
+			<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<onleft>1000</onleft>
 			<onright>1000</onright>
@@ -37,8 +37,8 @@
 			<ondown>26</ondown>
 			<action>seek</action>
 			<texturesliderbar>seekslider2.png</texturesliderbar>
-			<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-			<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+			<textureslidernib colordiffuse="blue">osd_slider_nibNF.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="blue">osd_slider_nib.png</textureslidernibfocus>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 		</control>
@@ -54,8 +54,8 @@
 				<height>55</height>
 				<label>210</label>
 				<font>-</font>
-				<texturefocus>OSDPrevTrackFO.png</texturefocus>
-				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDPrevTrackFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDPrevTrackNF.png</texturenofocus>
 				<onleft>704</onleft>
 				<onright>601</onright>
 				<onup>1000</onup>
@@ -69,8 +69,8 @@
 				<height>55</height>
 				<label>31354</label>
 				<font>-</font>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDRewindFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDRewindNF.png</texturenofocus>
 				<onleft>600</onleft>
 				<onright>602</onright>
 				<onup>1000</onup>
@@ -85,11 +85,11 @@
 				<label>31351</label>
 				<altlabel>208</altlabel>
 				<font>-</font>
-				<texturefocus>OSDPauseFO.png</texturefocus>
-				<texturenofocus>OSDPauseNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDPauseFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDPauseNF.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="blue">OSDPlayFO.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="blue">OSDPlayNF.png</alttexturenofocus>
 				<onleft>601</onleft>
 				<onright>603</onright>
 				<onup>1000</onup>
@@ -103,8 +103,8 @@
 				<height>55</height>
 				<label>31352</label>
 				<font>-</font>
-				<texturefocus>OSDStopFO.png</texturefocus>
-				<texturenofocus>OSDStopNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDStopFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDStopNF.png</texturenofocus>
 				<onleft>602</onleft>
 				<onright>604</onright>
 				<onup>1000</onup>
@@ -118,8 +118,8 @@
 				<height>55</height>
 				<label>31353</label>
 				<font>-</font>
-				<texturefocus>OSDForwardFO.png</texturefocus>
-				<texturenofocus>OSDForwardNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDForwardFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDForwardNF.png</texturenofocus>
 				<onleft>603</onleft>
 				<onright>605</onright>
 				<onup>1000</onup>
@@ -133,8 +133,8 @@
 				<height>55</height>
 				<label>209</label>
 				<font>-</font>
-				<texturefocus>OSDNextTrackFO.png</texturefocus>
-				<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDNextTrackFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDNextTrackNF.png</texturenofocus>
 				<onleft>604</onleft>
 				<onright>606</onright>
 				<onup>1000</onup>
@@ -161,7 +161,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatNF.png</texture>
+				<texture colordiffuse="blue">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -170,7 +170,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatFO.png</texture>
+				<texture colordiffuse="blue">OSDRepeatFO.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -179,7 +179,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="blue">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -188,7 +188,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatOneFO.png</texture>
+				<texture colordiffuse="blue">OSDRepeatOneFO.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -197,7 +197,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="blue">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -206,7 +206,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<texture>OSDRepeatAllFO.png</texture>
+				<texture colordiffuse="blue">OSDRepeatAllFO.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -217,11 +217,11 @@
 				<height>55</height>
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font>-</font>
-				<texturefocus>OSDRandomOffFO.png</texturefocus>
-				<texturenofocus>OSDRandomOffNF.png</texturenofocus>
-				<usealttexture>Playlist.IsRandom</usealttexture>
-				<alttexturefocus>OSDRandomOnFO.png</alttexturefocus>
-				<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
+				<texturefocus colordiffuse="blue">OSDRandomOffFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDRandomOffNF.png</texturenofocus>
+				<usealttexture colordiffuse="blue">Playlist.IsRandom</usealttexture>
+				<alttexturefocus colordiffuse="blue">OSDRandomOnFO.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="blue">OSDRandomOnNF.png</alttexturenofocus>
 				<onclick>PlayerControl(Random)</onclick>
 				<onleft>606</onleft>
 				<onright>701</onright>
@@ -241,10 +241,10 @@
 				<height>55</height>
 				<label>31128</label>
 				<font>-</font>
-				<texturefocus>OSDLyricsFO.png</texturefocus>
-				<texturenofocus>OSDLyricsNF.png</texturenofocus>
-				<alttexturefocus>OSDLyricsFO.png</alttexturefocus>
-				<alttexturenofocus>OSDLyricsNF.png</alttexturenofocus>
+				<texturefocus colordiffuse="blue">OSDLyricsFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDLyricsNF.png</texturenofocus>
+				<alttexturefocus colordiffuse="blue">OSDLyricsFO.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="blue">OSDLyricsNF.png</alttexturenofocus>
 				<onleft>607</onleft>
 				<onright>500</onright>
 				<onup>1000</onup>
@@ -263,8 +263,8 @@
 				<height>55</height>
 				<label>12006</label>
 				<font>-</font>
-				<texturefocus>OSDVizFO.png</texturefocus>
-				<texturenofocus>OSDVizNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDVizFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDVizNF.png</texturenofocus>
 				<onleft>701</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>
@@ -277,8 +277,8 @@
 				<height>55</height>
 				<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 				<font>-</font>
-				<texturefocus>OSDPresetSettingsFO.png</texturefocus>
-				<texturenofocus>OSDPresetSettingsNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDPresetSettingsFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDPresetSettingsNF.png</texturenofocus>
 				<onleft>500</onleft>
 				<onright>703</onright>
 				<onup>1000</onup>
@@ -292,8 +292,8 @@
 				<height>55</height>
 				<label>31048</label>
 				<font>-</font>
-				<texturefocus>OSDPreFO.png</texturefocus>
-				<texturenofocus>OSDPreNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDPreFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDPreNF.png</texturenofocus>
 				<onleft>702</onleft>
 				<onright>704</onright>
 				<onup>1000</onup>
@@ -307,8 +307,8 @@
 				<height>55</height>
 				<label>264</label>
 				<font>-</font>
-				<texturefocus>OSDRecordOffFO.png</texturefocus>
-				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="blue">OSDRecordOffFO.png</texturefocus>
+				<texturenofocus colordiffuse="blue">OSDRecordOffNF.png</texturenofocus>
 				<onleft>703</onleft>
 				<onright>600</onright>
 				<onup>1000</onup>

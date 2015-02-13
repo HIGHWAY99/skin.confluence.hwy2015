@@ -25,7 +25,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_weather.png</texture>
+			<texture colordiffuse="blue">icon_weather.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -68,14 +68,14 @@
 					<top>0</top>
 					<width>500</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="20">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>612</top>
 					<width>500</width>
 					<height>64</height>
-					<texture border="10">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="10">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>8</left>
@@ -425,14 +425,14 @@
 					<top>0</top>
 					<width>650</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="20">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>612</top>
 					<width>650</width>
 					<height>64</height>
-					<texture border="10">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="10">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
 					<left>8</left>

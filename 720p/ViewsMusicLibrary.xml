@@ -65,7 +65,7 @@
 						<top>0</top>
 						<width>780</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 						<visible>Control.HasFocus(506)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -74,7 +74,7 @@
 						<top>5</top>
 						<width>200</width>
 						<height>31</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
+						<texture colordiffuse="blue" border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(506) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -110,7 +110,7 @@
 				<height>560</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>506</onleft>
@@ -131,7 +131,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture colordiffuse="blue" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
@@ -222,7 +222,7 @@
 					<width>150</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[ListItem.StarRating,CenterRating/]</texture>
+					<texture colordiffuse="blue">$INFO[ListItem.StarRating,CenterRating/]</texture>
 				</control>
 			</control>
 		</control>
@@ -238,7 +238,7 @@
 				<top>0</top>
 				<width>1280</width>
 				<height>270</height>
-				<texture border="1">HomeNowPlayingBack.png</texture>
+				<texture colordiffuse="blue" border="1">HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="label">
 				<left>40</left>
@@ -296,7 +296,7 @@
 						<width>152</width>
 						<height>152</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>black-back.png</texture>
+						<texture colordiffuse="blue">black-back.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
 					</control>
 					<control type="image">
@@ -318,7 +318,7 @@
 						<width>168</width>
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
-						<bordertexture border="8">ThumbBorder.png</bordertexture>
+						<bordertexture colordiffuse="blue" border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -350,7 +350,7 @@
 				<height>25</height>
 				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="14,0,14,0">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="14,0,14,0">ScrollBarH_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>509</onup>
@@ -370,7 +370,7 @@
 				<top>0</top>
 				<width>920</width>
 				<height>410</height>
-				<texture border="20">ContentPanel.png</texture>
+				<texture colordiffuse="blue" border="20">ContentPanel.png</texture>
 			</control>
 			<control type="label">
 				<left>40</left>
@@ -462,7 +462,7 @@
 					<width>160</width>
 					<height>32</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[ListItem.StarRating,LeftRating/]</texture>
+					<texture colordiffuse="blue">$INFO[ListItem.StarRating,LeftRating/]</texture>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Album</description>
@@ -553,7 +553,7 @@
 						<top>0</top>
 						<width>760</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 						<visible>Control.HasFocus(511)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -562,7 +562,7 @@
 						<top>5</top>
 						<width>200</width>
 						<height>31</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
+						<texture colordiffuse="blue" border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(511) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -606,7 +606,7 @@
 				<height>560</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>511</onleft>
@@ -626,7 +626,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture colordiffuse="blue" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="grouplist">
@@ -763,7 +763,7 @@
 						<top>0</top>
 						<width>580</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 						<visible>Control.HasFocus(512)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -788,7 +788,7 @@
 				<height>560</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>512</onleft>
@@ -808,7 +808,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture colordiffuse="blue" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="group">
@@ -894,7 +894,7 @@
 						<top>60</top>
 						<width>510</width>
 						<height>4</height>
-						<texture>separator.png</texture>
+						<texture colordiffuse="blue">separator.png</texture>
 					</control>
 					<control type="textbox">
 						<description>Description Value for Artist</description>
@@ -977,7 +977,7 @@
 						<top>0</top>
 						<width>780</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 						<visible>Control.HasFocus(513)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -986,7 +986,7 @@
 						<top>5</top>
 						<width>200</width>
 						<height>31</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
+						<texture colordiffuse="blue" border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(513) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -1022,7 +1022,7 @@
 				<height>560</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>513</onleft>
@@ -1042,7 +1042,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture colordiffuse="blue" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">

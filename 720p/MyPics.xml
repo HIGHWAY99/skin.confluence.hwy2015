@@ -41,7 +41,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_pictures.png</texture>
+			<texture colordiffuse="blue">icon_pictures.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -98,7 +98,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>ButtonCommonValues</include>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturefocus colordiffuse="blue" border="5">button-focus.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<label>31051</label>
 					<altlabel>31050</altlabel>

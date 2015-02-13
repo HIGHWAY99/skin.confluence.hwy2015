@@ -20,7 +20,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_system.png</texture>
+			<texture colordiffuse="blue">icon_system.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -51,14 +51,14 @@
 				<top>0</top>
 				<width>610</width>
 				<height>620</height>
-				<texture border="20">ContentPanel.png</texture>
+				<texture colordiffuse="blue" border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>612</top>
 				<width>610</width>
 				<height>64</height>
-				<texture border="10">ContentPanelMirror.png</texture>
+				<texture colordiffuse="blue" border="10">ContentPanelMirror.png</texture>
 			</control>
 			<control type="image">
 				<left>510</left>
@@ -103,7 +103,7 @@
 				<height>490</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>31</onleft>
@@ -172,14 +172,14 @@
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(20)</visible>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
 						<top>2</top>
 						<width>200</width>
 						<height>31</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
+						<texture colordiffuse="blue" border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(20) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -225,14 +225,14 @@
 				<top>0</top>
 				<width>610</width>
 				<height>620</height>
-				<texture border="20">ContentPanel.png</texture>
+				<texture colordiffuse="blue" border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>612</top>
 				<width>610</width>
 				<height>64</height>
-				<texture border="10">ContentPanelMirror.png</texture>
+				<texture colordiffuse="blue" border="10">ContentPanelMirror.png</texture>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -277,7 +277,7 @@
 				<height>490</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="blue" border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>21</onleft>
@@ -346,14 +346,14 @@
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(21)</visible>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture colordiffuse="blue" border="0,2,0,2">buttonfocus2.png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
 						<top>2</top>
 						<width>200</width>
 						<height>31</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
+						<texture colordiffuse="blue" border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(21) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -422,7 +422,7 @@
 				<label>1036</label>
 				<font>-</font>
 				<onclick>back</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturefocus colordiffuse="blue" border="5">floor_buttonFOB.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
@@ -436,7 +436,7 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
+				<texture colordiffuse="blue">icon_back.png</texture>
 			</control>
 			<control type="button">
 				<description>Home push button</description>
@@ -447,7 +447,7 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturefocus colordiffuse="blue" border="5">floor_buttonFOB.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
@@ -461,7 +461,7 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_home.png</texture>
+				<texture colordiffuse="blue">icon_home.png</texture>
 			</control>
 		</control>
 		<include>Clock</include>

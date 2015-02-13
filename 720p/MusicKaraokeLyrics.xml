@@ -27,7 +27,7 @@
 				<top>-10</top>
 				<width>470</width>
 				<height>55</height>
-				<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+				<texture colordiffuse="blue" flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
 			</control>
 			<control type="label" id="402">
 				<description>Next Song Name</description>

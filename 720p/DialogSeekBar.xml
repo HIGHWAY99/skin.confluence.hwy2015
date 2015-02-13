@@ -16,7 +16,7 @@
 				<width>150</width>
 				<height>70</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="12">OverlayDialogBackground.png</texture>
+				<texture colordiffuse="blue" border="12">OverlayDialogBackground.png</texture>
 			</control>
 			<control type="label" id="1">
 				<description>Chapter Pos No</description>
@@ -54,7 +54,7 @@
 				<width>370</width>
 				<height>70</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="12">OverlayDialogBackground.png</texture>
+				<texture colordiffuse="blue" border="12">OverlayDialogBackground.png</texture>
 			</control>
 			<control type="group">
 				<left>260</left>
@@ -64,14 +64,14 @@
 					<top>0</top>
 					<width>80</width>
 					<height>50</height>
-					<texture>OSDSeekFrame.png</texture>
+					<texture colordiffuse="btnnf">OSDSeekFrame.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>3</top>
 					<width>20</width>
 					<height>44</height>
-					<texture>OSDSeekRewind.png</texture>
+					<texture colordiffuse="btnfo">OSDSeekRewind.png</texture>
 					<visible>Player.Rewinding</visible>
 				</control>
 				<control type="image">
@@ -79,7 +79,7 @@
 					<top>3</top>
 					<width>20</width>
 					<height>44</height>
-					<texture>OSDSeekForward.png</texture>
+					<texture colordiffuse="btnfo">OSDSeekForward.png</texture>
 					<visible>Player.Forwarding</visible>
 				</control>
 				<control type="image">
@@ -87,7 +87,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSDPause.png</texture>
+					<texture colordiffuse="btnfo">OSDPause.png</texture>
 					<visible>Player.Paused</visible>
 				</control>
 				<control type="image">
@@ -95,7 +95,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSDPlay.png</texture>
+					<texture colordiffuse="btnfo">OSDPlay.png</texture>
 					<visible>Player.Playing</visible>
 				</control>
 
@@ -104,7 +104,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD2x.png</texture>
+					<texture colordiffuse="btnfo">OSD2x.png</texture>
 					<visible>Player.Rewinding2x</visible>
 				</control>
 				<control type="image">
@@ -112,7 +112,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD4x.png</texture>
+					<texture colordiffuse="btnfo">OSD4x.png</texture>
 					<visible>Player.Rewinding4x</visible>
 				</control>
 				<control type="image">
@@ -120,7 +120,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD8x.png</texture>
+					<texture colordiffuse="btnfo">OSD8x.png</texture>
 					<visible>Player.Rewinding8x</visible>
 				</control>
 				<control type="image">
@@ -128,7 +128,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD16x.png</texture>
+					<texture colordiffuse="btnfo">OSD16x.png</texture>
 					<visible>Player.Rewinding16x</visible>
 				</control>
 				<control type="image">
@@ -136,7 +136,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD32x.png</texture>
+					<texture colordiffuse="btnfo">OSD32x.png</texture>
 					<visible>Player.Rewinding32x</visible>
 				</control>
 
@@ -145,7 +145,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD2x.png</texture>
+					<texture colordiffuse="btnfo">OSD2x.png</texture>
 					<visible>Player.Forwarding2x</visible>
 				</control>
 				<control type="image">
@@ -153,7 +153,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD4x.png</texture>
+					<texture colordiffuse="btnfo">OSD4x.png</texture>
 					<visible>Player.Forwarding4x</visible>
 				</control>
 				<control type="image">
@@ -161,7 +161,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD8x.png</texture>
+					<texture colordiffuse="btnfo">OSD8x.png</texture>
 					<visible>Player.Forwarding8x</visible>
 				</control>
 				<control type="image">
@@ -169,7 +169,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD16x.png</texture>
+					<texture colordiffuse="btnfo">OSD16x.png</texture>
 					<visible>Player.Forwarding16x</visible>
 				</control>
 				<control type="image">
@@ -177,7 +177,7 @@
 					<top>4</top>
 					<width>40</width>
 					<height>40</height>
-					<texture>OSD32x.png</texture>
+					<texture colordiffuse="btnfo">OSD32x.png</texture>
 					<visible>Player.Forwarding32x</visible>
 				</control>
 			</control>
@@ -191,7 +191,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>$LOCALIZE[31042]</label>
 				<visible>Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
@@ -204,7 +204,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>31043</label>
 				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
@@ -217,7 +217,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
 				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
 			</control>
@@ -230,7 +230,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>$LOCALIZE[31046]</label>
 				<visible>Player.Seeking</visible>
 			</control>
@@ -243,7 +243,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</label>
 				<visible>Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]</visible>
 			</control>
@@ -256,7 +256,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>31044</label>
 				<visible>Player.Forwarding</visible>
 			</control>
@@ -269,7 +269,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>customcolor6</textcolor>
 				<label>31045</label>
 				<visible>Player.Rewinding</visible>
 			</control>
@@ -306,7 +306,7 @@
 				<width>240</width>
 				<height>15</height>
 				<info>Player.ProgressCache</info>
-				<midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
+				<midtexture colordiffuse="vidbarcache" border="6,0,6,0">OSDProgressMidLight.png</midtexture>
 				<visible>true</visible>
 			</control>
 			<control type="progress" id="23">
@@ -325,8 +325,8 @@
 				<width>240</width>
 				<height>12</height>
 				<texturesliderbar>seekslider.png</texturesliderbar>
-				<textureslidernib>osd_slider_nib.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+				<textureslidernib colordiffuse="customcolor6">osd_slider_nib.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="customcolor6">osd_slider_nib.png</textureslidernibfocus>
 				<visible>Player.Seeking</visible>
 			</control>
 		</control>

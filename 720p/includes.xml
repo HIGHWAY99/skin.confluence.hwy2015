@@ -41,7 +41,7 @@
 			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
-			<texture>black-back.png</texture>
+			<texture colordiffuse="customcolor6">black-back.png</texture>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="200">Hidden</animation>
 			<visible>Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | Window.IsActive(PlayerControls) | Window.IsActive(VirtualKeyboard) | Window.IsActive(NumericInput) | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(Peripherals) | Window.IsActive(PeripheralSettings) | Window.IsActive(script-cu-lrclyrics-main.xml) | Window.IsActive(PVRChannelManager) | Window.IsActive(MediaFilter)</visible>
@@ -53,8 +53,8 @@
 		<width min="0" max="800">auto</width>
 		<height>30</height>
 		<font>font14</font>
-		<textcolor>white</textcolor>
-		<shadowcolor>black</shadowcolor>
+		<textcolor>customcolor1</textcolor>
+		<shadowcolor>customcolor5</shadowcolor>
 		<scroll>false</scroll>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -66,7 +66,7 @@
 		<textwidth>200</textwidth>
 		<aligny>center</aligny>
 		<font>font13</font>
-		<texturefocus border="5">button-focus.png</texturefocus>
+		<texturefocus colordiffuse="customcolor6" border="5">buttonfocus1.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
@@ -77,7 +77,7 @@
 		<textwidth>195</textwidth>
 		<aligny>center</aligny>
 		<font>font12_title</font>
-		<texturefocus border="5">button-focus.png</texturefocus>
+		<texturefocus border="5">buttonfocus1.png</texturefocus>
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
@@ -88,9 +88,9 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12</font>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white</focusedcolor>
-		<texturefocus border="5">HomeSubFO.png</texturefocus>
+		<textcolor>customcolor3</textcolor>
+		<focusedcolor>customcolor6</focusedcolor>
+		<texturefocus colordiffuse="customcolor6" border="5">HomeSubFO.png</texturefocus>
 		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
@@ -114,7 +114,7 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12_title</font>
-		<texturefocus border="5">button-focus.png</texturefocus>
+		<texturefocus colordiffuse="customcolor6" border="5">buttonfocus1.png</texturefocus>
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
@@ -141,15 +141,15 @@
 			<width>42</width>
 			<height>128</height>
 			<font>-</font>
-			<texturefocus>HasSub.png</texturefocus>
-			<texturenofocus>HasSub.png</texturenofocus>
+			<texturefocus colordiffuse="customcolor6">HasSub.png</texturefocus>
+			<texturenofocus colordiffuse="customcolor6">HasSub.png</texturenofocus>
 		</control>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>260</width>
 			<height>720</height>
-			<texture border="0,0,10,0">MediaBladeSub.png</texture>
+			<texture colordiffuse="customcolor6" border="0,0,10,0">MediaBladeSub.png</texture>
 		</control>
 		<control type="image">
 			<description>LOGO</description>
@@ -158,8 +158,48 @@
 			<width>220</width>
 			<height>80</height>
 			<aspectratio>keep</aspectratio>
-			<texture>Confluence_Logo.png</texture>
+			<texture colordiffuse="customcolor6">Confluence_Logo.png</texture>
 		</control>
+	</include>
+	<include name="Size16x16">
+		<width>16</width>
+		<height>16</height>
+	</include>
+	<include name="Size24x24">
+		<width>24</width>
+		<height>24</height>
+	</include>
+	<include name="Size32x32">
+		<width>32</width>
+		<height>32</height>
+	</include>
+	<include name="Size48x48">
+		<width>48</width>
+		<height>48</height>
+	</include>
+	<include name="Size64x64">
+		<width>64</width>
+		<height>64</height>
+	</include>
+	<include name="Size90x90">
+		<width>90</width>
+		<height>90</height>
+	</include>
+	<include name="Size120x120">
+		<width>120</width>
+		<height>120</height>
+	</include>
+	<include name="Size128x128">
+		<width>128</width>
+		<height>128</height>
+	</include>
+	<include name="Size218x218">
+		<width>218</width>
+		<height>218</height>
+	</include>
+	<include name="Size256x256">
+		<width>256</width>
+		<height>256</height>
 	</include>
 	<include name="MainWindowMouseButtons">
 		<control type="group">
@@ -177,8 +217,8 @@
 				<label>1036</label>
 				<font>-</font>
 				<onclick>back</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus colordiffuse="cchhomebtn2" border="5">floorbutton-fo.png</texturefocus>
+				<texturenofocus colordiffuse="cchhomebtn1" border="5">floorbutton-fo.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -191,7 +231,7 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
+				<texture colordiffuse="customcolor6">icon_back.png</texture>
 			</control>
 			<control type="button">
 				<description>Home push button</description>
@@ -202,8 +242,8 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus colordiffuse="cchhomebtn2" border="5">floorbutton-fo.png</texturefocus>
+				<texturenofocus colordiffuse="cchhomebtn1" border="5">floorbutton-fo.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -216,9 +256,28 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_home.png</texture>
+				<texture colordiffuse="customcolor6">icon_home.png</texture>
 			</control>
 		</control>
+	</include>
+	<include name="HomeButtons1B">
+					<description>Home Screen Button - Button</description>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<font>-</font>
+					<texturefocus colordiffuse="cchhomebtn2" border="5">floorbutton-fo.png</texturefocus>
+					<texturenofocus colordiffuse="cchhomebtn1" border="5">floorbutton-fo.png</texturenofocus>
+					<onup>9002</onup>
+					<ondown>9003</ondown>
+	</include>
+	<include name="HomeButtons1I">
+					<description>Home Screen Button - Image</description>
+					<top>5</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>cchhomebtni</colordiffuse>
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
@@ -235,8 +294,8 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus colordiffuse="cchhomebtn2" border="5">floorbutton-fo.png</texturefocus>
+				<texturenofocus colordiffuse="cchhomebtn1" border="5">floorbutton-fo.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -249,19 +308,19 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_player.png</texture>
+				<texture colordiffuse="customcolor6">icon_player.png</texture>
 			</control>
 			<control type="label">
 				<left>85</left>
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>$INFO[Player.Title] - ([COLOR=customcolor6]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 			</control>
 			<control type="label">
 				<left>85</left>
@@ -272,8 +331,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="label">
@@ -285,8 +344,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="label">
@@ -298,8 +357,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="label">
@@ -311,8 +370,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
@@ -320,12 +379,12 @@
 				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=blue],[/COLOR])]</label>
+				<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=customcolor6],[/COLOR])]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>customcolor2</textcolor>
+				<shadowcolor>customcolor5</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
@@ -340,11 +399,11 @@
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>customcolor2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems,([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+				<label>$INFO[Container.NumItems,([COLOR=customcolor6],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=customcolor6]]$INFO[Container.NumPages,/,[/COLOR])]</label>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="label">
@@ -354,11 +413,11 @@
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>customcolor2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=blue],[/COLOR])]</label>
+				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=customcolor6],[/COLOR])]</label>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>
@@ -391,8 +450,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor3</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 		<control type="fadelabel">
 			<description>Title label</description>
@@ -404,8 +463,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<scrollout>false</scrollout>
 			<pauseatend>2000</pauseatend>
 		</control>
@@ -419,8 +478,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 		<control type="label">
 			<description>Time Label</description>
@@ -432,8 +491,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 		<control type="label">
 			<description>Next Label</description>
@@ -441,12 +500,12 @@
 			<top>120</top>
 			<height>30</height>
 			<width>325</width>
-			<label>[COLOR=blue]$LOCALIZE[19031] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
+			<label>[COLOR=customcolor6]$LOCALIZE[19031] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>grey</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor2</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 	</include>
 	<include name="SmallVideoInfo">
@@ -478,8 +537,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor3</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
 		</control>
 		<control type="label">
@@ -492,8 +551,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>videoplayer.content(episodes)</visible>
 		</control>
 		<control type="fadelabel">
@@ -506,8 +565,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>videoplayer.content(musicvideos)</visible>
 			<scrollout>false</scrollout>
 			<pauseatend>2000</pauseatend>
@@ -522,8 +581,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<scrollout>false</scrollout>
 			<pauseatend>2000</pauseatend>
 		</control>
@@ -537,8 +596,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
 		</control>
 		<control type="label">
@@ -550,8 +609,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>videoplayer.content(musicvideos)</visible>
 		</control>
 		<control type="label">
@@ -564,8 +623,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<visible>videoplayer.content(episodes)</visible>
 		</control>
 		<control type="label">
@@ -578,8 +637,8 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 		</control>
 	</include>
 	<include name="CommonNowPlaying_Controls">
@@ -588,7 +647,7 @@
 			<height>35</height>
 			<font>font12</font>
 			<label>31023</label>
-			<textcolor>blue</textcolor>
+			<textcolor>customcolor6</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>Player.HasMedia</visible>
@@ -609,8 +668,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDChannelUPFO.png</texturefocus>
-				<texturenofocus>OSDChannelUPNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDChannelUPFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDChannelUPNF.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>601</onright>
 				<onup>610</onup>
@@ -623,8 +682,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDChannelDownFO.png</texturefocus>
-				<texturenofocus>OSDChannelDownNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDChannelDownFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDChannelDownNF.png</texturenofocus>
 				<onleft>600</onleft>
 				<onright>603</onright>
 				<onup>610</onup>
@@ -637,8 +696,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDStopFO.png</texturefocus>
-				<texturenofocus>OSDStopNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDStopFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDStopNF.png</texturenofocus>
 				<onleft>601</onleft>
 				<onright>604</onright>
 				<onup>610</onup>
@@ -652,11 +711,11 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDPauseFO.png</texturefocus>
-				<texturenofocus>OSDPauseNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDPauseFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDPauseNF.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="btnfo">OSDPlayFO.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="btnnf">OSDPlayNF.png</alttexturenofocus>
 				<onleft>603</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
@@ -672,8 +731,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDRecordOffFO.png</texturefocus>
-				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDRecordOffFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDRecordOffNF.png</texturenofocus>
 				<onleft>604</onleft>
 				<onright>50</onright>
 				<onup>610</onup>
@@ -696,8 +755,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDPrevTrackFO.png</texturefocus>
-				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDPrevTrackFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDPrevTrackNF.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>606</onright>
 				<onup>610</onup>
@@ -711,8 +770,8 @@
 				<width>39</width>
 				<height>39</height>
 				<label>-</label>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
+				<texturefocus colordiffuse="btnfo">OSDRewindFO.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf">OSDRewindNF.png</texturenofocus>
 				<onleft>600</onleft>
 				<onright>603</onright>
 				<onup>610</onup>
@@ -729,11 +788,11 @@
 					<width>39</width>
 					<height>39</height>
 					<label>-</label>
-					<texturefocus>OSDPauseFO.png</texturefocus>
-					<texturenofocus>OSDPauseNF.png</texturenofocus>
+					<texturefocus colordiffuse="btnfo">OSDPauseFO.png</texturefocus>
+					<texturenofocus colordiffuse="btnnf">OSDPauseNF.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-					<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+					<alttexturefocus colordiffuse="btnfo">OSDPlayFO.png</alttexturefocus>
+					<alttexturenofocus colordiffuse="btnnf">OSDPlayNF.png</alttexturenofocus>
 					<onleft>606</onleft>
 					<onright>601</onright>
 					<onup>610</onup>
@@ -747,8 +806,8 @@
 					<width>39</width>
 					<height>39</height>
 					<label>-</label>
-					<texturefocus>OSDStopFO.png</texturefocus>
-					<texturenofocus>OSDStopNF.png</texturenofocus>
+					<texturefocus colordiffuse="btnfo">OSDStopFO.png</texturefocus>
+					<texturenofocus colordiffuse="btnnf">OSDStopNF.png</texturenofocus>
 					<onleft>603</onleft>
 					<onright>607</onright>
 					<onup>610</onup>
@@ -763,8 +822,8 @@
 					<width>39</width>
 					<height>39</height>
 					<label>-</label>
-					<texturefocus>OSDForwardFO.png</texturefocus>
-					<texturenofocus>OSDForwardNF.png</texturenofocus>
+					<texturefocus colordiffuse="btnfo">OSDForwardFO.png</texturefocus>
+					<texturenofocus colordiffuse="btnnf">OSDForwardNF.png</texturenofocus>
 					<onleft>601</onleft>
 					<onright>602</onright>
 					<onup>610</onup>
@@ -779,8 +838,8 @@
 					<width>39</width>
 					<height>39</height>
 					<label>-</label>
-					<texturefocus>OSDNextTrackFO.png</texturefocus>
-					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+					<texturefocus colordiffuse="btnfo">OSDNextTrackFO.png</texturefocus>
+					<texturenofocus colordiffuse="btnnf">OSDNextTrackNF.png</texturenofocus>
 					<onleft>607</onleft>
 					<onright>604</onright>
 					<onup>610</onup>
@@ -812,7 +871,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatNF.png</texture>
+					<texture colordiffuse="btnnf">OSDRepeatNF.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
@@ -821,7 +880,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatFO.png</texture>
+					<texture colordiffuse="btnfo">OSDRepeatFO.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
@@ -830,7 +889,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatOneNF.png</texture>
+					<texture colordiffuse="btnnf">OSDRepeatOneNF.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
@@ -839,7 +898,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatOneFO.png</texture>
+					<texture colordiffuse="btnfo">OSDRepeatOneFO.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
@@ -848,7 +907,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatAllNF.png</texture>
+					<texture colordiffuse="btnnf">OSDRepeatAllNF.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
@@ -857,7 +916,7 @@
 					<top>2</top>
 					<width>39</width>
 					<height>39</height>
-					<texture>OSDRepeatAllFO.png</texture>
+					<texture colordiffuse="btnfo">OSDRepeatAllFO.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
@@ -867,11 +926,11 @@
 					<width>39</width>
 					<height>39</height>
 					<label>-</label>
-					<texturefocus>OSDRandomOffFO.png</texturefocus>
-					<texturenofocus>OSDRandomOffNF.png</texturenofocus>
+					<texturefocus colordiffuse="btnfo">OSDRandomOffFO.png</texturefocus>
+					<texturenofocus colordiffuse="btnnf">OSDRandomOffNF.png</texturenofocus>
 					<usealttexture>Playlist.IsRandom</usealttexture>
-					<alttexturefocus>OSDRandomOnFO.png</alttexturefocus>
-					<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
+					<alttexturefocus colordiffuse="btnfo">OSDRandomOnFO.png</alttexturefocus>
+					<alttexturenofocus colordiffuse="btnnf">OSDRandomOnNF.png</alttexturenofocus>
 					<onclick>PlayerControl(Random)</onclick>
 					<onleft>604</onleft>
 					<onright>50</onright>
@@ -886,10 +945,10 @@
 			<include>ButtonCommonValues</include>
 			<label>31008</label>
 			<onclick>fullscreen</onclick>
-			<textureradioonfocus>GoFullscreen.png</textureradioonfocus>
-			<textureradioonnofocus>GoFullscreen.png</textureradioonnofocus>
-			<textureradioofffocus>GoFullscreen.png</textureradioofffocus>
-			<textureradiooffnofocus>GoFullscreen.png</textureradiooffnofocus>
+			<textureradioonfocus colordiffuse="btnfo">GoFullscreen.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="btnnf">GoFullscreen.png</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="btnfo">GoFullscreen.png</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="btnnf">GoFullscreen.png</textureradiooffnofocus>
 			<visible>Player.HasMedia</visible>
 		</control>
 		<control type="button" id="612">
@@ -912,7 +971,7 @@
 				<top>0</top>
 				<width>70</width>
 				<height>65</height>
-				<texture border="20,20,20,2">InfoMessagePanel.png</texture>
+				<texture colordiffuse="customcolor6" border="20,20,20,2">InfoMessagePanel.png</texture>
 			</control>
 			<control type="label">
 				<left>5</left>
@@ -922,7 +981,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 				<font>font30_title</font>
 			</control>
 		</control>
@@ -937,8 +996,8 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font28_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<textcolor>customcolor1</textcolor>
+			<shadowcolor>customcolor5</shadowcolor>
 			<label>$INFO[System.Time]</label>
 			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
 		</control>
@@ -988,7 +1047,7 @@
 				<width>180</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -1012,7 +1071,7 @@
 				<width>180</width>
 				<height>120</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">folder-focus.png</bordertexture>
+				<bordertexture colordiffuse="folderfocus" border="5">folder-focus-w2.png</bordertexture>
 				<bordersize>3</bordersize>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ControlGroup(9002).HasFocus</visible>
@@ -1031,7 +1090,7 @@
 				<width>180</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -1043,7 +1102,7 @@
 				<width>180</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>customcolor3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -1096,8 +1155,8 @@
 				<top>60</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>white</textcolor>
+				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=customcolor6]-[/COLOR] ]</label>
+				<textcolor>customcolor1</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1108,7 +1167,7 @@
 				<width>260</width>
 				<height>15</height>
 				<label>$INFO[ListItem.Property(NextTitle)]</label>
-				<textcolor>white</textcolor>
+				<textcolor>customcolor1</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1118,8 +1177,8 @@
 				<top>100</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>grey2</textcolor>
+				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=customcolor6]-[/COLOR] ]</label>
+				<textcolor>customcolor3</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1129,8 +1188,8 @@
 				<top>120</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=blue]-[/COLOR] (,)]</label>
-				<textcolor>grey2</textcolor>
+				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=customcolor6]-[/COLOR] (,)]</label>
+				<textcolor>customcolor3</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1141,7 +1200,7 @@
 				<top>0</top>
 				<width>280</width>
 				<height>145</height>
-				<texture border="10">button-focus2.png</texture>
+				<texture border="10">buttonfocus2.png</texture>
 			</control>
 			<control type="image">
 				<description>Thumb</description>
@@ -1179,7 +1238,7 @@
 				<top>60</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=blue]-[/COLOR] ]</label>
+				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=customcolor6]-[/COLOR] ]</label>
 				<textcolor>selected</textcolor>
 				<font>font12</font>
 				<align>center</align>
@@ -1201,8 +1260,8 @@
 				<top>100</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>white</textcolor>
+				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=customcolor6]-[/COLOR] ]</label>
+				<textcolor>customcolor1</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1212,8 +1271,8 @@
 				<top>120</top>
 				<width>260</width>
 				<height>15</height>
-				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=blue]-[/COLOR] (,)]</label>
-				<textcolor>white</textcolor>
+				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=customcolor6]-[/COLOR] (,)]</label>
+				<textcolor>customcolor1</textcolor>
 				<font>font12</font>
 				<align>center</align>
 			</control>
@@ -1239,10 +1298,10 @@
 		<width>50</width>
 		<height>50</height>
 		<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-		<texturefocus border="5">KeyboardKey.png</texturefocus>
+		<texturefocus colordiffuse="customcolor6" border="5">KeyboardKey.png</texturefocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font13</font>
-		<focusedcolor>black</focusedcolor>
+		<focusedcolor>customcolor5</focusedcolor>
 	</include>
 </includes>

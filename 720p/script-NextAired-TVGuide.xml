@@ -114,7 +114,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_video.png</texture>
+			<texture colordiffuse="blue">icon_video.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -152,14 +152,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -195,14 +195,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -238,14 +238,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -281,14 +281,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -324,14 +324,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -367,14 +367,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>
@@ -410,14 +410,14 @@
 					<top>0</top>
 					<width>300</width>
 					<height>600</height>
-					<texture border="15">ContentPanel.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>592</top>
 					<width>300</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture>
+					<texture colordiffuse="blue" border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="label">
 					<left>20</left>

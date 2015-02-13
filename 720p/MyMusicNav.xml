@@ -32,7 +32,7 @@
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>icon_music.png</texture>
+			<texture colordiffuse="blue">icon_music.png</texture>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -89,7 +89,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>ButtonCommonValues</include>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturefocus colordiffuse="blue" border="5">button-focus.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<label>31051</label>
 					<altlabel>31050</altlabel>
@@ -161,7 +161,7 @@
 					<include>ButtonCommonValues</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturefocus colordiffuse="blue" border="5">button-focus.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<usealttexture>library.isscanningmusic</usealttexture>
 				</control>

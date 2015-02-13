@@ -18,7 +18,7 @@
 				<top>0</top>
 				<width>920</width>
 				<height>639</height>
-				<texture border="40">DialogBack.png</texture>
+				<texture colordiffuse="blue" border="40">DialogBack.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
@@ -50,7 +50,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>3</onleft>
 				<onright>3</onright>
@@ -65,7 +65,7 @@
 				<height>220</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
-				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordertexture colordiffuse="blue" border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 			</control>
 			<control type="label">
@@ -212,7 +212,7 @@
 					<width>160</width>
 					<height>27</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="LeftRating/rating0.png">$INFO[ListItem.Property(Addon.StarRating),LeftRating/]</texture>
+					<texture colordiffuse="blue" fallback="LeftRating/rating0.png">$INFO[ListItem.Property(Addon.StarRating),LeftRating/]</texture>
 				</control>
 				<control type="label">
 					<description>Summary txt</description>
@@ -244,7 +244,7 @@
 					<top>160</top>
 					<width>600</width>
 					<height>4</height>
-					<texture>separator.png</texture>
+					<texture colordiffuse="blue">separator.png</texture>
 				</control>
 				<control type="label">
 					<description>Description txt</description>
@@ -291,7 +291,7 @@
 						<height>190</height>
 						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+						<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 						<textureslidernib>ScrollBarNib.png</textureslidernib>
 						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 						<onleft>9000</onleft>
@@ -357,7 +357,7 @@
 						<height>260</height>
 						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+						<texturesliderbarfocus colordiffuse="blue" border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 						<textureslidernib>ScrollBarNib.png</textureslidernib>
 						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 						<onleft>60</onleft>
@@ -444,7 +444,7 @@
 					<top>0</top>
 					<width>920</width>
 					<height>100</height>
-					<texture border="20">OverlayDialogBackground.png</texture>
+					<texture colordiffuse="blue" border="20">OverlayDialogBackground.png</texture>
 				</control>
 				<control type="image">
 					<description>Icon image</description>

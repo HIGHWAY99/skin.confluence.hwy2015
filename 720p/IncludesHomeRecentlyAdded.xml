@@ -53,7 +53,7 @@
 							<top>0</top>
 							<width>180</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -86,7 +86,7 @@
 							<top>0</top>
 							<width>180</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -95,7 +95,7 @@
 							<height>170</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordertexture colordiffuse="blue" border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<visible>Control.HasFocus(8000)</visible>
 						</control>
@@ -290,7 +290,7 @@
 							<top>0</top>
 							<width>240</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -336,7 +336,7 @@
 							<top>0</top>
 							<width>240</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -345,7 +345,7 @@
 							<height>155</height>
 							<aspectratio>scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordertexture colordiffuse="blue" border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<visible>Control.HasFocus(8001)</visible>
 						</control>
@@ -551,7 +551,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -597,7 +597,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>220</height>
-							<texture border="15">RecentAddedBack.png</texture>
+							<texture colordiffuse="blue" border="15">RecentAddedBack.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -606,7 +606,7 @@
 							<height>155</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordertexture colordiffuse="blue" border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<visible>Control.HasFocus(8002)</visible>
 						</control>

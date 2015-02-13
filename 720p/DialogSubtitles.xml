@@ -31,7 +31,7 @@
 				<width>1150</width>
 				<height>720</height>
 				<colordiffuse>BBFFFFFF</colordiffuse>
-				<texture border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
+				<texture colordiffuse="blue" border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -42,7 +42,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>101</onleft>
 				<onright>101</onright>
@@ -81,7 +81,7 @@
 					<top>140</top>
 					<width>820</width>
 					<height>4</height>
-					<texture>separator.png</texture>
+					<texture colordiffuse="blue">separator.png</texture>
 				</control>
 				<control type="image" id="110">
 					<description>Service Logo</description>
@@ -108,7 +108,7 @@
 					<top>176</top>
 					<width>820</width>
 					<height>4</height>
-					<texture>separator.png</texture>
+					<texture colordiffuse="blue">separator.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -157,7 +157,7 @@
 							<top>13</top>
 							<width>20</width>
 							<height>12</height>
-							<texture>Subtitles/icon_close_caption.png</texture>
+							<texture colordiffuse="blue">Subtitles/icon_close_caption.png</texture>
 							<visible>ListItem.property(hearing_imp)</visible>
 						</control>
 						<control type="image">
@@ -165,7 +165,7 @@
 							<top>13</top>
 							<width>40</width>
 							<height>12</height>
-							<texture>Subtitles/icon_sync.png</texture>
+							<texture colordiffuse="blue">Subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="label">
@@ -202,7 +202,7 @@
 							<top>0</top>
 							<width>780</width>
 							<height>38</height>
-							<texture>MenuItemFO.png</texture>
+							<texture colordiffuse="blue">MenuItemFO.png</texture>
 							<visible>Control.HasFocus(120)</visible>
 						</control>
 						<control type="image">
@@ -230,7 +230,7 @@
 							<top>13</top>
 							<width>20</width>
 							<height>12</height>
-							<texture>Subtitles/icon_close_caption.png</texture>
+							<texture colordiffuse="blue">Subtitles/icon_close_caption.png</texture>
 							<visible>ListItem.property(hearing_imp)</visible>
 						</control>
 						<control type="image">
@@ -238,7 +238,7 @@
 							<top>13</top>
 							<width>40</width>
 							<height>12</height>
-							<texture>Subtitles/icon_sync.png</texture>
+							<texture colordiffuse="blue">Subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="label">
@@ -281,8 +281,8 @@
 					<textoffsetx>10</textoffsetx>
 					<textureup>scroll-up.png</textureup>
 					<texturedown>scroll-down.png</texturedown>
-					<textureupfocus>scroll-up-focus.png</textureupfocus>
-					<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+					<textureupfocus colordiffuse="blue">scroll-up-focus.png</textureupfocus>
+					<texturedownfocus colordiffuse="blue">scroll-down-focus.png</texturedownfocus>
 					<showonepage>false</showonepage>
 					<visible>Control.IsVisible(120)</visible>
 				</control>
@@ -315,7 +315,7 @@
 					<top>348</top>
 					<width>24</width>
 					<height>24</height>
-					<texture>scroll-right-focus.png</texture>
+					<texture colordiffuse="blue">scroll-right-focus.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -325,7 +325,7 @@
 					<top>360</top>
 					<width>720</width>
 					<height>4</height>
-					<texture>separator.png</texture>
+					<texture colordiffuse="blue">separator.png</texture>
 					<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>		
 				</control>
 				<control type="label">
@@ -347,7 +347,7 @@
 					<top>176</top>
 					<width>240</width>
 					<height>4</height>
-					<texture>separator.png</texture>
+					<texture colordiffuse="blue">separator.png</texture>
 				</control>
 				<control type="list" id="150">
 					<left>900</left>
@@ -394,7 +394,7 @@
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<texture>MenuItemFO.png</texture>
+							<texture colordiffuse="blue">MenuItemFO.png</texture>
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">

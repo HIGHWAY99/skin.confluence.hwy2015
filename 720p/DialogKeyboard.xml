@@ -16,7 +16,7 @@
 				<top>0</top>
 				<width>860</width>
 				<height>430</height>
-				<texture border="40">DialogBack.png</texture>
+				<texture colordiffuse="blue" border="40">DialogBack.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
@@ -47,7 +47,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>3</onleft>
 				<onright>3</onright>
@@ -98,7 +98,7 @@
 						<onup>300</onup>
 						<ondown>302</ondown>
 						<texturenofocus border="25,25,5,5">KeyboardCornerTopNF.png</texturenofocus>
-						<texturefocus border="25,25,5,5">KeyboardCornerTop.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="25,25,5,5">KeyboardCornerTop.png</texturefocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -175,7 +175,7 @@
 						<onup>306</onup>
 						<ondown>131</ondown>
 						<texturenofocus flipx="true" border="5,25,25,5">KeyboardCornerTopNF.png</texturenofocus>
-						<texturefocus flipx="true" border="5,25,25,5">KeyboardCornerTop.png</texturefocus>
+						<texturefocus colordiffuse="blue" flipx="true" border="5,25,25,5">KeyboardCornerTop.png</texturefocus>
 						<include>KeyboardButton</include>
 					</control>
 				</control>
@@ -192,7 +192,7 @@
 						<onup>309</onup>
 						<ondown>303</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -287,7 +287,7 @@
 						<onup>302</onup>
 						<ondown>307</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -382,7 +382,7 @@
 						<ondown>300</ondown>
 						<label>IP</label>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -396,7 +396,7 @@
 						<onup>303</onup>
 						<ondown>300</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -488,7 +488,7 @@
 						<width>200</width>
 						<height>50</height>
 						<texturenofocus border="25,5,25,5">KeyboardCornerBottomNF.png</texturenofocus>
-						<texturefocus border="25,5,25,5">KeyboardCornerBottom.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="25,5,25,5">KeyboardCornerBottom.png</texturefocus>
 						<label>20177</label>
 						<font>font13</font>
 						<align>center</align>
@@ -503,7 +503,7 @@
 						<height>50</height>
 						<label>20182</label>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -519,7 +519,7 @@
 						<onup>165</onup>
 						<ondown>105</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -533,7 +533,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus colordiffuse="blue" border="5">KeyboardKey.png</texturefocus>
 						<font>font30</font>
 						<focusedcolor>black</focusedcolor>
 						<onup>168</onup>
@@ -547,7 +547,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<texturenofocus flipx="true" border="5,5,25,25">KeyboardCornerBottomNF.png</texturenofocus>
-						<texturefocus flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
+						<texturefocus colordiffuse="blue" flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
 						<font>font30</font>
 						<focusedcolor>black</focusedcolor>
 						<onup>170</onup>

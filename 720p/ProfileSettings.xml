@@ -13,7 +13,7 @@
 			<top>0</top>
 			<width>700</width>
 			<height>570</height>
-			<texture border="40">DialogBack.png</texture>
+			<texture colordiffuse="blue" border="40">DialogBack.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
@@ -45,7 +45,7 @@
 			<label>-</label>
 			<font>-</font>
 			<onclick>PreviousMenu</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
+			<texturefocus colordiffuse="blue">DialogCloseButton.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<onleft>1</onleft>
 			<onright>1</onright>
@@ -61,8 +61,8 @@
 			<height>150</height>
 			<align>left</align>
 			<aspectratio>stretch</aspectratio>
-			<texture>unknown-user.png</texture>
-			<bordertexture border="8">ThumbBorder.png</bordertexture>
+			<texture colordiffuse="blue">unknown-user.png</texture>
+			<bordertexture colordiffuse="blue" border="8">ThumbBorder.png</bordertexture>
 			<bordersize>8</bordersize>
 		</control>
 		<control type="label">
@@ -124,7 +124,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">buttonfocus2.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -134,7 +134,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">buttonfocus2.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -144,7 +144,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus colordiffuse="blue" border="5">buttonfocus2.png</texturefocus>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -152,7 +152,7 @@
 		<control type="image" id="11">
 			<description>separator image</description>
 			<height>2</height>
-			<texture>separator2.png</texture>
+			<texture colordiffuse="blue">separator2.png</texture>
 		</control>
 		<control type="button" id="28">
 			<description>Ok Button</description>
