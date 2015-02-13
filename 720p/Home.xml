@@ -771,6 +771,13 @@
 					<visible>Container(9000).HasFocus(5)</visible>
 					<include>HomeSubMenuSystem</include> <!-- Buttons for the grouplist -->
 				</control>
+				<control type="grouplist" id="9019">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9012</onleft>
+					<onright>9012</onright>
+					<visible>Container(9000).HasFocus(1)</visible>
+					<include>HomeSubMenuPrograms</include> <!-- Buttons for the grouplist -->
+				</control>
 				<control type="grouplist" id="9013">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9013</onleft>

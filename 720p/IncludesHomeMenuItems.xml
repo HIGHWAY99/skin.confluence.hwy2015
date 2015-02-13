@@ -179,6 +179,43 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
+	<include name="HomeSubMenuPrograms">
+		<control type="image" id="90621">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90622">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Debug Grid</label>
+			<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+		</control>
+		<control type="button" id="90623">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Debug Info</label>
+			<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
+		</control>
+		<control type="button" id="90624">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Reload Skin</label>
+			<onclick>ReloadSkin()</onclick>
+		</control>
+		<control type="button" id="90625">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Refresh Addons</label>
+			<onclick>UpdateLocalAddons()</onclick>
+		</control>
+		<control type="button" id="90625">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Addon Browser</label>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
+		</control>
+		<control type="image" id="90620">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
 	<include name="HomeSubMenuSystem">
 		<control type="image" id="90121">
 			<width>35</width>
