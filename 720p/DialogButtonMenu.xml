@@ -184,6 +184,22 @@
 				<font>font13</font>
 				<label>13013</label>
 			</control>
+			<control type="button" id="28">
+				<description>Home button</description>
+				<width>340</width>
+				<height>40</height>
+				<textcolor>customcolor3</textcolor>
+				<focusedcolor>customcolor1</focusedcolor>
+				<align>center</align>
+				<textwidth>290</textwidth>
+				<texturefocus colordiffuse="btnfo" border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus colordiffuse="btnnf" border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>ActivateWindow(home)</onclick>
+				<visible>true</visible>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>Home Screen</label>
+			</control>
 			<control type="button" id="9">
 				<description>Logoff button</description>
 				<width>340</width>
