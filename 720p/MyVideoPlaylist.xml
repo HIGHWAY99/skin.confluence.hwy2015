@@ -45,6 +45,11 @@
 			</control>
 		</control>
 		<control type="group">
+			<left>1270</left>
+			<include>SideBladeRight</include>
+			<include>SideBladeRightItems</include>
+		</control>
+		<control type="group">
 			<left>-250</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
@@ -52,7 +57,7 @@
 				<top>110</top>
 				<width>250</width>
 				<height>600</height>
-				<onleft>9000</onleft>
+				<onleft>8996</onleft>
 				<onright>50</onright>
 				<onback>50</onback>
 				<onup>9000</onup>

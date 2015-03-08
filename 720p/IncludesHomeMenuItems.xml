@@ -216,22 +216,22 @@
 		</control>
 		<control type="button" id="90623">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Debug Info</label>
+			<label>Debug $LOCALIZE[31033]</label>
 			<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
 		</control>
 		<control type="button" id="90624">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Reload Skin</label>
+			<label>20183</label>
 			<onclick>ReloadSkin()</onclick>
 		</control>
 		<control type="button" id="90625">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Refresh Addons</label>
+			<label>$LOCALIZE[184] $LOCALIZE[24001]</label>
 			<onclick>UpdateLocalAddons()</onclick>
 		</control>
 		<control type="button" id="90625">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Addon Browser</label>
+			<label>$LOCALIZE[24000] Browser</label>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 		</control>
 		<control type="image" id="90620">
@@ -268,12 +268,12 @@
 		</control>
 		<control type="button" id="90128">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Appearance</label>
+			<label>480</label>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 		</control>
 		<control type="button" id="90127">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Skin</label>
+			<label>166</label>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 		</control>
 		<control type="image" id="90126">

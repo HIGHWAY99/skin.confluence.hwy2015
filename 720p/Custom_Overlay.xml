@@ -7,7 +7,6 @@
 		<!-- Global debug grid -->
 
 		<control type="image">
-			<visible>!Skin.HasSetting(DebugGrid)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -20,6 +19,7 @@
 			<height>ScreenHeight</height>
 			<texture>special://skin/debuggrid1080.png</texture-->
 			<colordiffuse>0xffff9900</colordiffuse>
+			<visible>Skin.HasSetting(DebugGrid)</visible>
 		</control>
 
 		<!-- Window/Dialog debug -->
@@ -30,14 +30,14 @@
 			<width>780</width>
 			<height>450</height>
 			<itemgap>12</itemgap>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(HideDebugInfo)</visible>
 
 			<!-- Window labels -->
 
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -48,7 +48,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -59,7 +59,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -70,7 +70,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -81,7 +81,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -92,7 +92,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -103,7 +103,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -114,7 +114,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -125,7 +125,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -136,7 +136,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -147,7 +147,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -158,7 +158,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -169,7 +169,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -180,7 +180,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -191,7 +191,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -202,7 +202,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -213,7 +213,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -224,7 +224,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -235,7 +235,7 @@
 			<control type="label">
 				<width>780</width>
 				<height>21</height>
-				<textcolor>FF0000FF</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
@@ -914,12 +914,12 @@
 			<posy>15</posy>
 			<width>780</width>
 			<height>21</height>
-			<textcolor>FF0000FF</textcolor>
+			<textcolor>FFFFFFFF</textcolor>
 			<shadowcolor>FF000000</shadowcolor>
 			<font>font13</font>
 			<align>right</align>
 			<label>$INFO[System.CurrentControl]</label>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(HideDebugInfo)</visible>
 		</control>
 
 		<!-- Path label -->
@@ -929,12 +929,12 @@
 			<posy>48</posy>
 			<width>780</width>
 			<height>21</height>
-			<textcolor>FFFF0000</textcolor>
+			<textcolor>FFFFFFFF</textcolor>
 			<shadowcolor>FF000000</shadowcolor>
 			<font>font13</font>
 			<align>right</align>
 			<label>[COLOR=FF00FF00]$INFO[Container.FolderName,, - ][/COLOR]$INFO[Container.FolderPath]</label>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(HideDebugInfo)</visible>
 		</control>
 
 	</controls>

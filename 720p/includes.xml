@@ -118,6 +118,657 @@
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
+	<include name="SideBladeRight">
+		<animation effect="slide" start="0,0" end="-260,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(8996).HasFocus | Control.HasFocus(8997) | Control.HasFocus(8998)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="300,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(8996).HasFocus | Control.HasFocus(8997)">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="50,0" time="300" tween="quadratic" easing="out" condition="![ControlGroup(8996).HasFocus | Control.HasFocus(8997)]">WindowClose</animation>
+		<animation effect="slide" start="50,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+		<!--
+		-->
+		<!--
+		<animation effect="slide" start="1030,0" end="1280,0" time="1400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8997) | Control.HasFocus(8998)">Conditional</animation>
+		<animation effect="slide" start="1030,0" end="1330,0" time="1400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8997)">WindowClose</animation>
+		<animation effect="slide" start="1030,0" end="1180,0" time="1300" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(8997)]">WindowClose</animation>
+		<animation effect="slide" start="1180,0" end="1030,0" time="1300" tween="quadratic" easing="out">WindowOpen</animation>
+		-->
+		<control type="button" id="8998">
+			<description>Fake button for mouse control</description>
+			<left>0</left><top>0</top><width>250</width><height>720</height>
+			<label>-</label><font>-</font><texturenofocus>-</texturenofocus><texturefocus>-</texturefocus><visible>true</visible>
+		</control>
+		<control type="button" id="8997">
+			<left>-32</left><top>260</top><width>42</width><height>128</height><font>-</font>
+			<texturefocus flipx="true" colordiffuse="customcolor6">HasSub.png</texturefocus>
+			<texturenofocus flipx="true" colordiffuse="customcolor6">HasSub.png</texturenofocus>
+		</control>
+		<control type="image">
+			<left>0</left><top>0</top><width>270</width><height>720</height>
+			<texture flipx="true" colordiffuse="customcolor6" border="0,0,10,0">MediaBladeSub.png</texture>
+		</control>
+		<control type="image">
+			<description>LOGO</description>
+			<left>15</left><top>0</top><width>220</width><height>80</height>
+			<texture colordiffuse="customcolor6">Confluence_Logo.png</texture><aspectratio>keep</aspectratio>
+		</control>
+	</include>
+	<include name="SideBladeRightItems">
+			<control type="grouplist" id="8996">
+				<left>15</left><top>60</top><width>250</width><height>650</height>
+				<onleft>50</onleft><onright>9000</onright><onup>8996</onup><ondown>8996</ondown>
+				<onback>50</onback>
+				<itemgap>0</itemgap>
+				<!--movement>1</movement-->
+				<control type="label" id="200">
+					<width>250</width><height>35</height>
+					<font>font12</font>
+					<label>Cheat Sheet</label>
+					<textcolor>customcolor6</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="8101">
+					<description>Home</description><include>ButtonCommonValues</include>
+					<label>10000</label><onclick>ActivateWindow(Home)</onclick>
+				</control>
+				<control type="button" id="8122">
+					<description>Favourites</description><include>ButtonCommonValues</include>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</control>
+				<control type="button" id="8102">
+					<description>Weather</description><include>ButtonCommonValues</include>
+					<label>31950</label><onclick>ActivateWindow(Weather)</onclick>
+				</control>
+				<control type="button" id="8103">
+					<description>Videos</description><include>ButtonCommonValues</include>
+					<label>===</label><label2>31953</label2>
+					<onclick>Skin.ToggleSetting(RSideSubMenuVideos)</onclick>
+				</control>
+				<control type="button" id="8104">
+					<description>Videos Files</description><include>ButtonCommonValues</include>
+					<label>31953</label><label2>744</label2>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuVideos)</visible>
+				</control>
+				<control type="button" id="8105">
+					<description>Videos Addons</description><include>ButtonCommonValues</include>
+					<label>31953</label><label2>24001</label2>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuVideos)</visible>
+				</control>
+				<control type="button" id="8106">
+					<description>HomeVideosButton1</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton1)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton1))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton1))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8107">
+					<description>HomeVideosButton2</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton2)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton2))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton2))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8108">
+					<description>HomeVideosButton3</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton3))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton3))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8109">
+					<description>HomeVideosButton4</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton4))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton4)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton4))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton4))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8110">
+					<description>HomeVideosButton5</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton5))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton5)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton5))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton5))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8137">
+					<description>HomeVideosButton6</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton6))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton6)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton6))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton6))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8156">
+					<description>HomeVideosButton7</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton7))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton7)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton7))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton7))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8138">
+					<description>HomeVideosButton8</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton8))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton8)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton8))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton8))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8139">
+					<description>HomeVideosButton9</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton9))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton9)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton9))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton9))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8140">
+					<description>HomeVideosButton10</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton10))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton10)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton10))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton10))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8141">
+					<description>HomeVideosButton11</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton11))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton11)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton11))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton11))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8142">
+					<description>HomeVideosButton12</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton12))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton12)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton12))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton12))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8143">
+					<description>HomeVideosButton13</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton13))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton13)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton13))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton13))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8144">
+					<description>HomeVideosButton14</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton14))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton14)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton14))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton14))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8145">
+					<description>HomeVideosButton15</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton15))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton15)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton15))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton15))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8146">
+					<description>HomeVideosButton16</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton16))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton16)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton16))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton16))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8147">
+					<description>HomeVideosButton17</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton17))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton17)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton17))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton17))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8148">
+					<description>HomeVideosButton18</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton18))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton18)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton18))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton18))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8149">
+					<description>HomeVideosButton19</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton19))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton19)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton19))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton19))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8150">
+					<description>HomeVideosButton20</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton20))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton20)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton20))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton20))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8151">
+					<description>HomeVideosButton21</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton21))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton21)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton21))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton21))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8152">
+					<description>HomeVideosButton22</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton22))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton22)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton22))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton22))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8153">
+					<description>HomeVideosButton23</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton23))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton23)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton23))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton23))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8154">
+					<description>HomeVideosButton24</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton24))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton24)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton24))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton24))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				<control type="button" id="8155">
+					<description>HomeVideosButton25</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeVideosButton25))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton25)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton25))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeVideosButton25))]+[Skin.HasSetting(RSideSubMenuVideos)]</visible>
+				</control>
+				
+				<!--
+				-->
+				<control type="button" id="8171">
+					<description>Programs</description><include>ButtonCommonValues</include>
+					<label>===</label><label2>31957</label2>
+					<onclick>Skin.ToggleSetting(RSideSubMenuPrograms)</onclick>
+				</control>
+				<control type="button" id="8111">
+					<description>Programs</description><include>ButtonCommonValues</include>
+					<label>31957</label>
+					<onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+					<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuPrograms)</visible>
+				</control>
+				<control type="button" id="8112">
+					<description>HomeProgramButton1</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton1)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton1))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton1))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8113">
+					<description>HomeProgramButton2</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton2)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton2))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton2))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8114">
+					<description>HomeProgramButton3</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton3)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton3))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton3))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8115">
+					<description>HomeProgramButton4</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton4))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton4)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton4))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton4))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8116">
+					<description>HomeProgramButton5</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton5))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton5)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton5))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton5))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8132">
+					<description>HomeProgramButton6</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton6))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton6)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton6))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton6))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8133">
+					<description>HomeProgramButton7</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton7))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton7)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton7))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton7))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8134">
+					<description>HomeProgramButton8</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton8))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton8)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton8))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton8))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8135">
+					<description>HomeProgramButton9</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton9))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton9)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton9))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton9))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				<control type="button" id="8136">
+					<description>HomeProgramButton10</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeProgramButton10))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeProgramButton10)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton10))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeProgramButton10))]+[Skin.HasSetting(RSideSubMenuPrograms)]</visible>
+				</control>
+				
+				<!--
+				-->
+				<control type="button" id="8117">
+					<description>Music</description><include>ButtonCommonValues</include>
+					<label>===</label><label2>31956</label2>
+					<onclick>Skin.ToggleSetting(RSideSubMenuMusic)</onclick>
+				</control>
+				<control type="button" id="8118">
+					<description>Music Files</description><include>ButtonCommonValues</include>
+					<label>31956</label><label2>744</label2>
+					<onclick>ActivateWindow(Music,Files,return)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuMusic)</visible>
+				</control>
+				<control type="button" id="8119">
+					<description>Music Addons</description><include>ButtonCommonValues</include>
+					<label>31956</label><label2>24001</label2>
+					<onclick>ActivateWindow(Music,Addons,return)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuMusic)</visible>
+				</control>
+				<control type="button" id="8120">
+					<description>HomeMusicButton1</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton1)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton1))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton1))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8121">
+					<description>HomeMusicButton2</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton2)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton2))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton2))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8172">
+					<description>HomeMusicButton3</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton3)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton3))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton3))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8173">
+					<description>HomeMusicButton4</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton4))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton4)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton4))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton4))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8174">
+					<description>HomeMusicButton5</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton5)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton5))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton5))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8175">
+					<description>HomeMusicButton6</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton6))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton6)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton6))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton6))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8176">
+					<description>HomeMusicButton7</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton7))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton7)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton7))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton7))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8177">
+					<description>HomeMusicButton8</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton8))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton8)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton8))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton8))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8178">
+					<description>HomeMusicButton9</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton9))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton9)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton9))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton9))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				<control type="button" id="8179">
+					<description>HomeMusicButton10</description><include>ButtonCommonValues</include>
+					<label>* $INFO[system.addontitle(Skin.String(HomeMusicButton10))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicButton10)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton10))]</icon>
+					<thumb>-</thumb>
+					<visible>[!IsEmpty(Skin.String(HomeMusicButton10))]+[Skin.HasSetting(RSideSubMenuMusic)]</visible>
+				</control>
+				
+				<!--
+				-->
+				<control type="button" id="8183">
+					<description>Status</description><include>ButtonCommonValues</include>
+					<label>===</label><label2>126</label2>
+					<onclick>Skin.ToggleSetting(RSideSubMenuStatus)</onclick>
+				</control>
+				<control type="label" id="8158">
+					<width>250</width><height>35</height>
+					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="progress" id="8159">
+					<description>CPU BAR</description>
+					<width>250</width><height>16</height>
+					<info>System.CPUUsage</info>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="label" id="8160">
+					<width>250</width><height>35</height>
+					<label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="progress" id="8161">
+					<description>Memory BAR</description>
+					<width>250</width><height>16</height>
+					<info></info>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="label" id="8162">
+					<width>250</width><height>35</height>
+					<label>$INFO[system.memory(free)] of $INFO[system.memory(total)] free</label>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="label" id="8163">
+					<width>250</width><height>35</height>
+					<label>$LOCALIZE[13295]  $INFO[System.InternetState]</label><label2></label2>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="label" id="8164">
+					<width>250</width><height>35</height>
+					<label>[ $INFO[System.ScreenMode] ]  $INFO[System.ScreenWidth] x $INFO[System.ScreenHeight]</label><label2></label2>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				<control type="label" id="8165">
+					<width>250</width><height>35</height>
+					<label>$INFO[System.FriendlyName]  $INFO[System.BuildVersion]</label><label2></label2>
+					<font>font12</font><textcolor>customcolor6</textcolor>
+					<align>left</align><aligny>center</aligny>
+					<visible>Skin.HasSetting(RSideSubMenuStatus)</visible>
+				</control>
+				
+				<control type="button" id="8166">
+					<description>Dreamcatcher Download</description><include>ButtonCommonValues</include>
+					<label>Dreamcatcher</label><label2>33003</label2>
+					<onclick>XBMC.RunPlugin(plugin://plugin.program.dreamcatcher/?mode=Record)</onclick>
+					<visible>Player.HasMedia</visible>
+				</control>
+				<control type="button" id="8167">
+					<description>Axel Download</description><include>ButtonCommonValues</include>
+					<label>Axel</label><label2>33003</label2>
+					<onclick>XBMC.RunPlugin(plugin://plugin.program.sendtoaxel/?mode=AxelDownload)</onclick>
+					<visible>Player.HasMedia</visible>
+				</control>
+				<control type="button" id="8168">
+					<description>Axel Play</description><include>ButtonCommonValues</include>
+					<label>Axel</label><label2>208</label2>
+					<onclick>XBMC.RunPlugin(plugin://plugin.program.sendtoaxel/?mode=AxelPlay)</onclick>
+					<visible>Player.HasMedia</visible>
+				</control>
+				<control type="button" id="8169">
+					<description>Stop</description><include>ButtonCommonValues</include>
+					<label>31352</label><label2>16003</label2>
+					<onclick>PlayerControl(Stop)</onclick>
+					<visible>Player.HasMedia</visible>
+				</control>
+				<control type="button" id="8170">
+					<description>Play - Pause - Resume</description><include>ButtonCommonValues</include>
+					<label>31351</label><label2>13404</label2>
+					<onclick>PlayerControl(Play)</onclick>
+					<visible>Player.HasMedia</visible>
+				</control>
+				
+				<!--
+				-->
+				<control type="button" id="8182">
+					<description>System</description><include>ButtonCommonValues</include>
+					<label>===</label><label2>13000</label2>
+					<onclick>Skin.ToggleSetting(RSideSubMenuSystem)</onclick>
+				</control>
+				<control type="button" id="8126">
+					<description>Settings</description><include>ButtonCommonValues</include>
+					<label>31959</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				<control type="button" id="8125">
+					<description>Appearance Settings</description><include>ButtonCommonValues</include>
+					<label>480</label><label2>1390</label2>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				<control type="button" id="8157">
+					<description>Skin Settings</description><include>ButtonCommonValues</include>
+					<label>166</label><label2>1390</label2>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				
+				<control type="button" id="8127">
+					<description>Axel Downloader</description><include>ButtonCommonValues</include>
+					<label>Axel Downloader</label>
+					<onclick>RunAddon(script.module.axel.downloader)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				<control type="button" id="8128">
+					<description>SendTo Axel</description><include>ButtonCommonValues</include>
+					<label>SendTo Axel</label>
+					<onclick>RunAddon(plugin.program.sendtoaxel)</onclick>
+					<visible>[Player.HasMedia]+[Skin.HasSetting(RSideSubMenuSystem)]</visible>
+				</control>
+				<control type="button" id="8129">
+					<description>Dreamcatcher</description><include>ButtonCommonValues</include>
+					<label>Dreamcatcher</label>
+					<onclick>RunAddon(plugin.program.dreamcatcher)</onclick>
+					<visible>[Player.HasMedia]+[Skin.HasSetting(RSideSubMenuSystem)]</visible>
+				</control>
+				
+				<control type="button" id="8130">
+					<description>PlayDVD</description><include>ButtonCommonValues</include>
+					<label>31958</label><onclick>PlayDVD()</onclick>
+					<visible>[System.HasMediaDVD]+[Skin.HasSetting(RSideSubMenuSystem)]</visible>
+				</control>
+				<control type="button" id="8131">
+					<description>EjectTray</description><include>ButtonCommonValues</include>
+					<label>13391</label><onclick>EjectTray()</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				
+				<control type="button" id="8180">
+					<description>Debug Grid</description><include>ButtonCommonValues</include>
+					<label>Grid</label><label2>Debug</label2>
+					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				<control type="button" id="8181">
+					<description>Debug Info</description><include>ButtonCommonValues</include>
+					<label>Info</label><label2>Debug</label2>
+					<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				
+				<control type="button" id="8123">
+					<description>Update Local Addons</description><include>ButtonCommonValues</include>
+					<label>Update Local</label><label2>24001</label2>
+					<onclick>UpdateLocalAddons()</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				<control type="button" id="8124">
+					<description>Reload Skin</description><include>ButtonCommonValues</include>
+					<label>20183</label>
+					<onclick>ReloadSkin()</onclick>
+					<visible>Skin.HasSetting(RSideSubMenuSystem)</visible>
+				</control>
+				
+			</control>
+	</include>
 	<include name="SideBladeLeft">
 		<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-300,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
@@ -125,14 +776,8 @@
 		<animation effect="slide" start="-50,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 		<control type="button" id="8999">
 			<description>Fake button for mouse control</description>
-			<left>0</left>
-			<top>0</top>
-			<width>250</width>
-			<height>720</height>
-			<label>-</label>
-			<font>-</font>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<left>0</left><top>0</top><width>250</width><height>720</height>
+			<label>-</label><font>-</font><texturenofocus>-</texturenofocus><texturefocus>-</texturefocus>
 			<visible>true</visible>
 		</control>
 		<control type="button" id="9001">
